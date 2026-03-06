@@ -36,38 +36,36 @@
         .gradient-tomate { background: linear-gradient(135deg, #E3342F 0%, #F6993F 50%, #FFED4A 100%); }
         .text-gradient { background: linear-gradient(135deg, #E3342F, #F6993F, #FFED4A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .btn-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-        .btn-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .btn-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
         .section-divider { height: 3px; background: linear-gradient(90deg, transparent, #E3342F, #F6993F, #FFED4A, transparent); }
         .menu-card { transition: transform 0.3s, box-shadow 0.3s; }
-        .menu-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(227, 52, 47, 0.15); }
-        .tomato-bounce { animation: bounce 2s ease-in-out infinite; }
-        @keyframes bounce { 0%, 100% { transform: translateY(0) rotate(0deg); } 25% { transform: translateY(-12px) rotate(-3deg); } 75% { transform: translateY(-4px) rotate(3deg); } }
+        .menu-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(227, 52, 47, 0.1); }
     </style>
 </head>
-<body class="bg-tomate-dark text-white">
+<body class="bg-white text-gray-900">
 
     <!-- ======== HERO ======== -->
     <section class="min-h-screen flex flex-col items-center justify-center px-4 py-16 relative overflow-hidden">
         <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-0 left-1/3 w-[400px] h-[400px] bg-tomate-red/15 rounded-full blur-[150px]"></div>
-            <div class="absolute bottom-0 right-1/3 w-[350px] h-[350px] bg-tomate-orange/10 rounded-full blur-[120px]"></div>
+            <div class="absolute top-0 left-1/3 w-[400px] h-[400px] bg-tomate-red/5 rounded-full blur-[150px]"></div>
+            <div class="absolute bottom-0 right-1/3 w-[350px] h-[350px] bg-tomate-orange/5 rounded-full blur-[120px]"></div>
         </div>
         <div class="relative z-10 text-center max-w-lg mx-auto">
             <img src="assets/logo.png" alt="Ke-Tomate" class="w-48 mx-auto mb-4">
-            <h1 class="font-display font-black text-6xl md:text-7xl text-white tracking-wide mb-2">KE-TOMATE</h1>
+            <h1 class="font-display font-black text-6xl md:text-7xl text-gray-900 tracking-wide mb-2">KE-TOMATE</h1>
             <p class="text-gradient font-bold text-xl tracking-widest uppercase mb-4">Simplemente la Michelada Perfecta</p>
-            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 mb-8">
-                <span class="w-2 h-2 bg-tomate-yellow rounded-full animate-pulse"></span>
-                <span class="text-white/80 text-sm font-medium">FIF 2026 — WTC Ciudad de México</span>
+            <div class="inline-flex items-center gap-2 bg-tomate-red/10 rounded-full px-5 py-2 mb-8">
+                <span class="w-2 h-2 bg-tomate-red rounded-full animate-pulse"></span>
+                <span class="text-gray-700 text-sm font-medium">FIF 2026 — WTC Ciudad de México</span>
             </div>
-            <p class="text-white/60 text-lg mb-8 max-w-md mx-auto">Bar de micheladas con 4 sucursales en Cuernavaca, Morelos. Marca registrada desde 2024. <strong class="text-tomate-yellow">¡Ya somos franquicia!</strong></p>
+            <p class="text-gray-500 text-lg mb-8 max-w-md mx-auto">Bar de micheladas con 4 sucursales en Cuernavaca, Morelos. Marca registrada desde 2024. <strong class="text-tomate-red">¡Ya somos franquicia!</strong></p>
             <div class="flex flex-col sm:flex-row gap-3 justify-center">
                 <a href="https://wa.me/525633295799?text=Hola%2C%20los%20vi%20en%20la%20Feria%20Internacional%20de%20Franquicias%202026.%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Ke-Tomate%20y%20su%20franquicia." target="_blank" class="btn-hover bg-[#25D366] text-white font-bold py-4 px-8 rounded-2xl shadow-lg shadow-green-500/20 text-center">Escríbenos por WhatsApp</a>
                 <a href="#franquicia" class="btn-hover bg-tomate-red text-white font-bold py-4 px-8 rounded-2xl shadow-lg shadow-red-500/20 text-center">Quiero la Franquicia</a>
             </div>
         </div>
         <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <svg class="w-6 h-6 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+            <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
         </div>
     </section>
 
@@ -76,14 +74,14 @@
         <div class="max-w-3xl mx-auto">
             <div class="section-divider mb-12"></div>
             <p class="text-tomate-orange text-sm font-semibold uppercase tracking-widest mb-3 text-center">Nuestro Concepto</p>
-            <h2 class="font-display text-4xl md:text-5xl text-white text-center mb-6">¿Qué es Ke-Tomate?</h2>
-            <p class="text-white/60 text-lg text-center max-w-2xl mx-auto mb-8">Ke-Tomate es un bar especializado en micheladas y preparados de cerveza. NO somos un restaurante tradicional — nos enfocamos en bebidas preparadas y botanas. El ambiente es casual, divertido, con música y colores vibrantes. Perfecto para reuniones con amigos, fin de semana, after-work y celebraciones.</p>
-            <p class="text-white/40 text-center mb-12">Público: Jóvenes adultos de 18 a 35 años. Precios accesibles desde $50 MXN.</p>
+            <h2 class="font-display text-4xl md:text-5xl text-gray-900 text-center mb-6">¿Qué es Ke-Tomate?</h2>
+            <p class="text-gray-500 text-lg text-center max-w-2xl mx-auto mb-8">Ke-Tomate es un bar especializado en micheladas y preparados de cerveza. NO somos un restaurante tradicional — nos enfocamos en bebidas preparadas y botanas. El ambiente es casual, divertido, con música y colores vibrantes. Perfecto para reuniones con amigos, fin de semana, after-work y celebraciones.</p>
+            <p class="text-gray-400 text-center mb-12">Público: Jóvenes adultos de 18 a 35 años. Precios accesibles desde $50 MXN.</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-tomate-card rounded-2xl p-5 text-center"><p class="font-display text-3xl text-tomate-red">4</p><p class="text-white/40 text-xs uppercase tracking-wider">Sucursales</p></div>
-                <div class="bg-tomate-card rounded-2xl p-5 text-center"><p class="font-display text-3xl text-tomate-yellow">2024</p><p class="text-white/40 text-xs uppercase tracking-wider">Marca Registrada</p></div>
-                <div class="bg-tomate-card rounded-2xl p-5 text-center"><p class="font-display text-3xl text-tomate-orange">NEW</p><p class="text-white/40 text-xs uppercase tracking-wider">Franquicia 2026</p></div>
-                <div class="bg-tomate-card rounded-2xl p-5 text-center"><p class="font-display text-3xl text-white">CDMX</p><p class="text-white/40 text-xs uppercase tracking-wider">Próximamente</p></div>
+                <div class="bg-red-50 rounded-2xl p-5 text-center"><p class="font-display text-3xl text-tomate-red">4</p><p class="text-gray-400 text-xs uppercase tracking-wider">Sucursales</p></div>
+                <div class="bg-orange-50 rounded-2xl p-5 text-center"><p class="font-display text-3xl text-tomate-orange">2024</p><p class="text-gray-400 text-xs uppercase tracking-wider">Marca Registrada</p></div>
+                <div class="bg-red-50 rounded-2xl p-5 text-center"><p class="font-display text-3xl text-tomate-red">NEW</p><p class="text-gray-400 text-xs uppercase tracking-wider">Franquicia 2026</p></div>
+                <div class="bg-orange-50 rounded-2xl p-5 text-center"><p class="font-display text-3xl text-gray-800">CDMX</p><p class="text-gray-400 text-xs uppercase tracking-wider">Próximamente</p></div>
             </div>
         </div>
     </section>
@@ -93,35 +91,35 @@
         <div class="max-w-3xl mx-auto">
             <div class="section-divider mb-12"></div>
             <p class="text-tomate-orange text-sm font-semibold uppercase tracking-widest mb-3 text-center">Lo Que Ofrecemos</p>
-            <h2 class="font-display text-4xl md:text-5xl text-white text-center mb-4">Menú de Micheladas y Preparados</h2>
-            <p class="text-white/40 text-center mb-10">Nuestras creaciones que hacen de Ke-Tomate el mejor bar de micheladas de Cuernavaca.</p>
+            <h2 class="font-display text-4xl md:text-5xl text-gray-900 text-center mb-4">Menú de Micheladas y Preparados</h2>
+            <p class="text-gray-400 text-center mb-10">Nuestras creaciones que hacen de Ke-Tomate el mejor bar de micheladas de Cuernavaca.</p>
             <div class="grid gap-4">
-                <div class="menu-card bg-tomate-card rounded-2xl p-6 border border-tomate-red/20 relative overflow-hidden">
+                <div class="menu-card bg-red-50 rounded-2xl p-6 border border-tomate-red/20 relative overflow-hidden">
                     <span class="absolute top-3 right-3 bg-tomate-red text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Estrella de la Casa</span>
-                    <h3 class="font-display text-2xl text-tomate-yellow mb-2">🥥 COCOMATO</h3>
-                    <p class="text-white/60">Coco + cacahuate = felicidad en cada mordida. Nuestra creación más popular. Si solo vas a probar una, que sea esta.</p>
+                    <h3 class="font-display text-2xl text-tomate-darkred mb-2">🥥 COCOMATO</h3>
+                    <p class="text-gray-600">Coco + cacahuate = felicidad en cada mordida. Nuestra creación más popular. Si solo vas a probar una, que sea esta.</p>
                 </div>
-                <div class="menu-card bg-tomate-card rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-orange mb-2">🍅 Michelada Clásica</h3><p class="text-white/60">Nuestra receta original con mezcla de tomate, limón, escarchado de chile y tu cerveza favorita.</p></div>
-                <div class="menu-card bg-tomate-card rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-orange mb-2">⚡ Ke Boost</h3><p class="text-white/60">Boost (bebida energética) con cerveza. Para las mejores noches, que el DJ haga lo suyo.</p></div>
-                <div class="menu-card bg-tomate-card rounded-2xl p-6"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-2xl text-tomate-orange">🍓 La Niña Fresa</h3><span class="text-tomate-yellow font-bold text-sm">~$100 MXN</span></div><p class="text-white/60">Mezcla de sabores tiernos, delicados y divertidos. Basada en fresa, perfecta para quienes buscan algo dulce y refrescante.</p></div>
-                <div class="menu-card bg-tomate-card rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-orange mb-2">🥃 Roncito / Cuba Libre</h3><p class="text-white/60">Para los amantes del ron. Preparado con nuestro toque especial Ke-Tomate.</p></div>
-                <div class="menu-card bg-tomate-card rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-orange mb-2">🍋 Michelada de Limón</h3><p class="text-white/60">Fresca, cítrica e intensa. La variante clásica para los puristas.</p></div>
-                <div class="menu-card bg-tomate-card rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-orange mb-2">🥥 Michelada de Coco</h3><p class="text-white/60">Preparado con coco para un sabor tropical.</p></div>
-                <div class="menu-card bg-tomate-card rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-orange mb-2">🍺 Cerveza de Barril</h3><p class="text-white/60">Cervezas de barril de marcas como Modelo y Heineken.</p></div>
+                <div class="menu-card bg-gray-50 rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-red mb-2">🍅 Michelada Clásica</h3><p class="text-gray-600">Nuestra receta original con mezcla de tomate, limón, escarchado de chile y tu cerveza favorita.</p></div>
+                <div class="menu-card bg-gray-50 rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-red mb-2">⚡ Ke Boost</h3><p class="text-gray-600">Boost (bebida energética) con cerveza. Para las mejores noches, que el DJ haga lo suyo.</p></div>
+                <div class="menu-card bg-gray-50 rounded-2xl p-6"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-2xl text-tomate-red">🍓 La Niña Fresa</h3><span class="text-tomate-orange font-bold text-sm">~$100 MXN</span></div><p class="text-gray-600">Mezcla de sabores tiernos, delicados y divertidos. Basada en fresa, perfecta para quienes buscan algo dulce y refrescante.</p></div>
+                <div class="menu-card bg-gray-50 rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-red mb-2">🥃 Roncito / Cuba Libre</h3><p class="text-gray-600">Para los amantes del ron. Preparado con nuestro toque especial Ke-Tomate.</p></div>
+                <div class="menu-card bg-gray-50 rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-red mb-2">🍋 Michelada de Limón</h3><p class="text-gray-600">Fresca, cítrica e intensa. La variante clásica para los puristas.</p></div>
+                <div class="menu-card bg-gray-50 rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-red mb-2">🥥 Michelada de Coco</h3><p class="text-gray-600">Preparado con coco para un sabor tropical.</p></div>
+                <div class="menu-card bg-gray-50 rounded-2xl p-6"><h3 class="font-display text-2xl text-tomate-red mb-2">🍺 Cerveza de Barril</h3><p class="text-gray-600">Cervezas de barril de marcas como Modelo y Heineken.</p></div>
             </div>
         </div>
     </section>
 
     <!-- ======== BOTANAS ======== -->
-    <section class="py-16 px-4 bg-tomate-card/50">
+    <section class="py-16 px-4 bg-red-50/50">
         <div class="max-w-3xl mx-auto">
             <p class="text-tomate-orange text-sm font-semibold uppercase tracking-widest mb-3 text-center">Para Acompañar</p>
-            <h2 class="font-display text-4xl md:text-5xl text-white text-center mb-10">Botanas</h2>
+            <h2 class="font-display text-4xl md:text-5xl text-gray-900 text-center mb-10">Botanas</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="menu-card bg-tomate-dark rounded-2xl p-6"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-xl text-tomate-yellow">🥜 Cacahuates</h3><span class="text-tomate-yellow font-bold text-sm">$50 MXN</span></div><p class="text-white/50 text-sm">Con salsas especiales estilo Ke-Tomate.</p></div>
-                <div class="menu-card bg-tomate-dark rounded-2xl p-6"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-xl text-tomate-yellow">🦐 Camarón</h3><span class="text-tomate-yellow font-bold text-sm">$50 MXN</span></div><p class="text-white/50 text-sm">Botana de camarón preparada.</p></div>
-                <div class="menu-card bg-tomate-dark rounded-2xl p-6"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-xl text-tomate-yellow">🥐 Cuernitos Calientes</h3><span class="text-tomate-yellow font-bold text-sm">$70 MXN</span></div><p class="text-white/50 text-sm">Con verduras calientes, limón y salsas.</p></div>
-                <div class="menu-card bg-tomate-dark rounded-2xl p-6"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-xl text-tomate-yellow">🥜 Cacahuate Grande</h3><span class="text-tomate-yellow font-bold text-sm">$70 MXN</span></div><p class="text-white/50 text-sm">Cacahuates con variedad de salsas. Porción grande.</p></div>
+                <div class="menu-card bg-white rounded-2xl p-6 shadow-sm"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-xl text-tomate-orange">🥜 Cacahuates</h3><span class="text-tomate-red font-bold text-sm">$50 MXN</span></div><p class="text-gray-500 text-sm">Con salsas especiales estilo Ke-Tomate.</p></div>
+                <div class="menu-card bg-white rounded-2xl p-6 shadow-sm"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-xl text-tomate-orange">🦐 Camarón</h3><span class="text-tomate-red font-bold text-sm">$50 MXN</span></div><p class="text-gray-500 text-sm">Botana de camarón preparada.</p></div>
+                <div class="menu-card bg-white rounded-2xl p-6 shadow-sm"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-xl text-tomate-orange">🥐 Cuernitos Calientes</h3><span class="text-tomate-red font-bold text-sm">$70 MXN</span></div><p class="text-gray-500 text-sm">Con verduras calientes, limón y salsas.</p></div>
+                <div class="menu-card bg-white rounded-2xl p-6 shadow-sm"><div class="flex items-center justify-between mb-2"><h3 class="font-display text-xl text-tomate-orange">🥜 Cacahuate Grande</h3><span class="text-tomate-red font-bold text-sm">$70 MXN</span></div><p class="text-gray-500 text-sm">Cacahuates con variedad de salsas. Porción grande.</p></div>
             </div>
         </div>
     </section>
@@ -131,41 +129,41 @@
         <div class="max-w-3xl mx-auto">
             <div class="section-divider mb-12"></div>
             <p class="text-tomate-orange text-sm font-semibold uppercase tracking-widest mb-3 text-center">Dónde Encontrarnos</p>
-            <h2 class="font-display text-4xl md:text-5xl text-white text-center mb-4">Nuestras Sucursales</h2>
-            <p class="text-white/40 text-center mb-10">4 sucursales en Cuernavaca, Morelos — y próximamente en CDMX</p>
+            <h2 class="font-display text-4xl md:text-5xl text-gray-900 text-center mb-4">Nuestras Sucursales</h2>
+            <p class="text-gray-400 text-center mb-10">4 sucursales en Cuernavaca, Morelos — y próximamente en CDMX</p>
             <div class="grid gap-4">
-                <div class="bg-tomate-card rounded-2xl p-6 border-l-4 border-tomate-red"><span class="text-tomate-red text-xs font-bold uppercase tracking-wider">Sucursal Original</span><h3 class="font-display text-2xl text-white mt-1">Granjas</h3><p class="text-white/50 text-sm mt-2">Avenida 10 de Abril S/N, Las Granjas, CP 62460, Cuernavaca, Morelos</p><p class="text-white/50 text-sm">Tel: 56 3329 5799</p></div>
-                <div class="bg-tomate-card rounded-2xl p-6 border-l-4 border-tomate-orange"><h3 class="font-display text-2xl text-white">Satélite</h3><p class="text-white/50 text-sm mt-2">Avenida 10 de Abril #54, Col. Satélite, Cuernavaca, Morelos</p></div>
-                <div class="bg-tomate-card rounded-2xl p-6 border-l-4 border-tomate-orange"><h3 class="font-display text-2xl text-white">Gobernadores</h3><p class="text-white/50 text-sm mt-2">Cuernavaca, Morelos — Zona sur de la ciudad</p></div>
-                <div class="bg-tomate-card rounded-2xl p-6 border-l-4 border-tomate-orange"><h3 class="font-display text-2xl text-white">Palmas</h3><p class="text-white/50 text-sm mt-2">Cuernavaca, Morelos — Zona norte de la ciudad</p></div>
-                <div class="bg-gradient-to-r from-tomate-red/20 to-tomate-yellow/10 rounded-2xl p-6 border border-tomate-yellow/20"><span class="text-tomate-yellow text-xs font-bold uppercase tracking-wider">Próximamente</span><h3 class="font-display text-2xl text-tomate-yellow mt-1">Ciudad de México</h3><p class="text-white/50 text-sm mt-2">¡Lleva Ke-Tomate a tu ciudad con nuestra franquicia!</p></div>
+                <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-tomate-red"><span class="text-tomate-red text-xs font-bold uppercase tracking-wider">Sucursal Original</span><h3 class="font-display text-2xl text-gray-900 mt-1">Granjas</h3><p class="text-gray-500 text-sm mt-2">Avenida 10 de Abril S/N, Las Granjas, CP 62460, Cuernavaca, Morelos</p><p class="text-gray-500 text-sm">Tel: 56 3329 5799</p></div>
+                <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-tomate-orange"><h3 class="font-display text-2xl text-gray-900">Satélite</h3><p class="text-gray-500 text-sm mt-2">Avenida 10 de Abril #54, Col. Satélite, Cuernavaca, Morelos</p></div>
+                <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-tomate-orange"><h3 class="font-display text-2xl text-gray-900">Gobernadores</h3><p class="text-gray-500 text-sm mt-2">Cuernavaca, Morelos — Zona sur de la ciudad</p></div>
+                <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-tomate-orange"><h3 class="font-display text-2xl text-gray-900">Palmas</h3><p class="text-gray-500 text-sm mt-2">Cuernavaca, Morelos — Zona norte de la ciudad</p></div>
+                <div class="bg-gradient-to-r from-tomate-red/10 to-tomate-orange/10 rounded-2xl p-6 border border-tomate-red/20"><span class="text-tomate-red text-xs font-bold uppercase tracking-wider">Próximamente</span><h3 class="font-display text-2xl text-tomate-red mt-1">Ciudad de México</h3><p class="text-gray-500 text-sm mt-2">¡Lleva Ke-Tomate a tu ciudad con nuestra franquicia!</p></div>
             </div>
-            <div class="bg-tomate-card rounded-2xl p-6 mt-8 text-center">
+            <div class="bg-gray-50 rounded-2xl p-6 mt-8 text-center">
                 <h3 class="font-display text-2xl text-tomate-orange mb-4">🕐 Horarios</h3>
                 <div class="grid grid-cols-2 gap-4">
-                    <div><p class="text-white/60 text-sm font-semibold">Lunes a Viernes</p><p class="text-white font-bold text-lg">12:00 PM - 8:00 PM</p></div>
-                    <div><p class="text-white/60 text-sm font-semibold">Sábado y Domingo</p><p class="text-white font-bold text-lg">9:00 AM - 8:00 PM</p></div>
+                    <div><p class="text-gray-500 text-sm font-semibold">Lunes a Viernes</p><p class="text-gray-900 font-bold text-lg">12:00 PM - 8:00 PM</p></div>
+                    <div><p class="text-gray-500 text-sm font-semibold">Sábado y Domingo</p><p class="text-gray-900 font-bold text-lg">9:00 AM - 8:00 PM</p></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ======== FRANQUICIA ======== -->
-    <section class="py-16 px-4 bg-tomate-card/50" id="franquicia">
+    <section class="py-16 px-4 bg-red-50/50" id="franquicia">
         <div class="max-w-3xl mx-auto">
             <div class="section-divider mb-12"></div>
             <p class="text-tomate-orange text-sm font-semibold uppercase tracking-widest mb-3 text-center">Modelo de Negocio</p>
-            <h2 class="font-display text-4xl md:text-5xl text-white text-center mb-4">Franquicia Ke-Tomate</h2>
-            <p class="text-white/40 text-center mb-10">¡Ya somos franquicia desde febrero 2026! Un negocio probado, simple y con altos márgenes.</p>
+            <h2 class="font-display text-4xl md:text-5xl text-gray-900 text-center mb-4">Franquicia Ke-Tomate</h2>
+            <p class="text-gray-400 text-center mb-10">¡Ya somos franquicia desde febrero 2026! Un negocio probado, simple y con altos márgenes.</p>
             <div class="grid gap-4 mb-10">
-                <div class="bg-tomate-dark rounded-2xl p-5 flex items-start gap-4"><span class="text-2xl">✅</span><div><h4 class="text-white font-bold">Marca Registrada</h4><p class="text-white/50 text-sm">Ke-Tomate es una marca formalmente registrada con todos los derechos protegidos.</p></div></div>
-                <div class="bg-tomate-dark rounded-2xl p-5 flex items-start gap-4"><span class="text-2xl">📈</span><div><h4 class="text-white font-bold">Modelo Probado</h4><p class="text-white/50 text-sm">4 sucursales exitosas en Cuernavaca con clientes fieles.</p></div></div>
-                <div class="bg-tomate-dark rounded-2xl p-5 flex items-start gap-4"><span class="text-2xl">⚡</span><div><h4 class="text-white font-bold">Operación Simple</h4><p class="text-white/50 text-sm">No necesitas cocina compleja. El concepto se centra en micheladas y botanas.</p></div></div>
-                <div class="bg-tomate-dark rounded-2xl p-5 flex items-start gap-4"><span class="text-2xl">💰</span><div><h4 class="text-white font-bold">Alto Margen</h4><p class="text-white/50 text-sm">Las bebidas preparadas tienen márgenes de ganancia muy atractivos.</p></div></div>
-                <div class="bg-tomate-dark rounded-2xl p-5 flex items-start gap-4"><span class="text-2xl">🎓</span><div><h4 class="text-white font-bold">Capacitación Completa</h4><p class="text-white/50 text-sm">Te enseñamos todo: preparación de bebidas, operación, servicio al cliente.</p></div></div>
-                <div class="bg-tomate-dark rounded-2xl p-5 flex items-start gap-4"><span class="text-2xl">🌎</span><div><h4 class="text-white font-bold">Expansión Nacional</h4><p class="text-white/50 text-sm">Estamos creciendo. CDMX es el siguiente destino.</p></div></div>
-                <div class="bg-tomate-dark rounded-2xl p-5 flex items-start gap-4"><span class="text-2xl">👥</span><div><h4 class="text-white font-bold">Pocos Empleados</h4><p class="text-white/50 text-sm">El negocio opera con un equipo reducido, lo que mantiene costos bajos.</p></div></div>
-                <div class="bg-tomate-dark rounded-2xl p-5 flex items-start gap-4"><span class="text-2xl">🔥</span><div><h4 class="text-white font-bold">Alta Demanda</h4><p class="text-white/50 text-sm">Las micheladas tienen alta demanda todo el año, especialmente en climas cálidos.</p></div></div>
+                <div class="bg-white rounded-2xl p-5 flex items-start gap-4 shadow-sm"><span class="text-2xl">✅</span><div><h4 class="text-gray-900 font-bold">Marca Registrada</h4><p class="text-gray-500 text-sm">Ke-Tomate es una marca formalmente registrada con todos los derechos protegidos.</p></div></div>
+                <div class="bg-white rounded-2xl p-5 flex items-start gap-4 shadow-sm"><span class="text-2xl">📈</span><div><h4 class="text-gray-900 font-bold">Modelo Probado</h4><p class="text-gray-500 text-sm">4 sucursales exitosas en Cuernavaca con clientes fieles.</p></div></div>
+                <div class="bg-white rounded-2xl p-5 flex items-start gap-4 shadow-sm"><span class="text-2xl">⚡</span><div><h4 class="text-gray-900 font-bold">Operación Simple</h4><p class="text-gray-500 text-sm">No necesitas cocina compleja. El concepto se centra en micheladas y botanas.</p></div></div>
+                <div class="bg-white rounded-2xl p-5 flex items-start gap-4 shadow-sm"><span class="text-2xl">💰</span><div><h4 class="text-gray-900 font-bold">Alto Margen</h4><p class="text-gray-500 text-sm">Las bebidas preparadas tienen márgenes de ganancia muy atractivos.</p></div></div>
+                <div class="bg-white rounded-2xl p-5 flex items-start gap-4 shadow-sm"><span class="text-2xl">🎓</span><div><h4 class="text-gray-900 font-bold">Capacitación Completa</h4><p class="text-gray-500 text-sm">Te enseñamos todo: preparación de bebidas, operación, servicio al cliente.</p></div></div>
+                <div class="bg-white rounded-2xl p-5 flex items-start gap-4 shadow-sm"><span class="text-2xl">🌎</span><div><h4 class="text-gray-900 font-bold">Expansión Nacional</h4><p class="text-gray-500 text-sm">Estamos creciendo. CDMX es el siguiente destino.</p></div></div>
+                <div class="bg-white rounded-2xl p-5 flex items-start gap-4 shadow-sm"><span class="text-2xl">👥</span><div><h4 class="text-gray-900 font-bold">Pocos Empleados</h4><p class="text-gray-500 text-sm">El negocio opera con un equipo reducido, lo que mantiene costos bajos.</p></div></div>
+                <div class="bg-white rounded-2xl p-5 flex items-start gap-4 shadow-sm"><span class="text-2xl">🔥</span><div><h4 class="text-gray-900 font-bold">Alta Demanda</h4><p class="text-gray-500 text-sm">Las micheladas tienen alta demanda todo el año, especialmente en climas cálidos.</p></div></div>
             </div>
             <div class="gradient-tomate rounded-2xl p-8 text-center">
                 <h3 class="font-display text-3xl text-white mb-3">¿Quieres tu propia franquicia?</h3>
@@ -180,19 +178,19 @@
         <div class="max-w-3xl mx-auto">
             <div class="section-divider mb-12"></div>
             <p class="text-tomate-orange text-sm font-semibold uppercase tracking-widest mb-3 text-center">Contáctanos</p>
-            <h2 class="font-display text-4xl md:text-5xl text-white text-center mb-10">Hablemos</h2>
+            <h2 class="font-display text-4xl md:text-5xl text-gray-900 text-center mb-10">Hablemos</h2>
             <div class="grid gap-4 max-w-md mx-auto">
                 <a href="https://wa.me/525633295799?text=Hola%2C%20los%20vi%20en%20la%20Feria%20Internacional%20de%20Franquicias%202026.%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Ke-Tomate%20y%20su%20franquicia." target="_blank" class="btn-hover block bg-[#25D366] text-white font-bold text-lg py-4 rounded-2xl text-center shadow-lg shadow-green-500/20">WhatsApp: 56 3329 5799</a>
-                <a href="tel:+525633295799" class="btn-hover block bg-white/10 text-white font-bold text-lg py-4 rounded-2xl text-center border border-white/10">Llamar: 56 3329 5799</a>
-                <a href="mailto:ke.tomates22@gmail.com" class="btn-hover block bg-white/10 text-white font-bold text-lg py-4 rounded-2xl text-center border border-white/10">ke.tomates22@gmail.com</a>
+                <a href="tel:+525633295799" class="btn-hover block bg-gray-100 text-gray-800 font-bold text-lg py-4 rounded-2xl text-center border border-gray-200">Llamar: 56 3329 5799</a>
+                <a href="mailto:ke.tomates22@gmail.com" class="btn-hover block bg-gray-100 text-gray-800 font-bold text-lg py-4 rounded-2xl text-center border border-gray-200">ke.tomates22@gmail.com</a>
                 <div class="flex gap-3">
                     <a href="https://www.instagram.com/ke_tomate/" target="_blank" class="btn-hover flex-1 bg-gradient-to-br from-purple-600 to-pink-500 text-white font-semibold py-3 rounded-2xl text-sm text-center">@ke_tomate</a>
                     <a href="https://www.facebook.com/KeTomateCuerna" target="_blank" class="btn-hover flex-1 bg-[#1877F2] text-white font-semibold py-3 rounded-2xl text-sm text-center">Facebook</a>
                 </div>
             </div>
-            <div class="bg-tomate-card rounded-2xl p-6 mt-8 text-center">
-                <p class="text-white/40 text-sm">Instagram: <strong class="text-white">2,988 seguidores</strong> · 260 posts · Cuenta verificada</p>
-                <p class="text-white/40 text-sm">Facebook: <strong class="text-white">3,300 seguidores</strong></p>
+            <div class="bg-gray-50 rounded-2xl p-6 mt-8 text-center">
+                <p class="text-gray-400 text-sm">Instagram: <strong class="text-gray-700">2,988 seguidores</strong> · 260 posts · Cuenta verificada</p>
+                <p class="text-gray-400 text-sm">Facebook: <strong class="text-gray-700">3,300 seguidores</strong></p>
             </div>
         </div>
     </section>
@@ -200,7 +198,7 @@
     <!-- ======== FOOTER ======== -->
     <footer class="py-8 px-4 pb-20 text-center">
         <div class="section-divider mb-8"></div>
-        <p class="text-white/20 text-xs">Ke-Tomate — Cuernavaca, Morelos — Marca Registrada</p>
+        <p class="text-gray-300 text-xs">Ke-Tomate — Cuernavaca, Morelos — Marca Registrada</p>
     </footer>
 
     <!-- ======== ELEVENLABS WIDGET (hidden by default) ======== -->
@@ -263,9 +261,20 @@
         }
         function closeAI() {
             const widget = document.querySelector('elevenlabs-convai');
-            widget.classList.remove('el-active');
-            document.getElementById('aiBtnWrapper').style.display = '';
-            document.getElementById('aiClose').classList.remove('visible');
+            // End the active conversation by clicking the widget's internal button
+            try {
+                const sr = widget.shadowRoot;
+                if (sr) {
+                    const btn = sr.querySelector('button');
+                    if (btn) btn.click();
+                }
+            } catch(e) {}
+            // Hide widget and reset UI
+            setTimeout(() => {
+                widget.classList.remove('el-active');
+                document.getElementById('aiBtnWrapper').style.display = '';
+                document.getElementById('aiClose').classList.remove('visible');
+            }, 300);
         }
     </script>
 
