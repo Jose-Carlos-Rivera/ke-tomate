@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ke-Tomate | La Michelada Perfecta — FIF 2026</title>
+    <meta name="description" content="Ke-Tomate - Simplemente la Michelada Perfecta. Conoce nuestra franquicia en FIF 2026. 4 sucursales en Cuernavaca, expandiéndonos a CDMX.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tomate: {
+                            red: '#E3342F',
+                            darkred: '#CC1F1A',
+                            orange: '#F6993F',
+                            yellow: '#FFED4A',
+                            green: '#38C172',
+                            dark: '#1a1a1a',
+                            cream: '#FFF8F0',
+                            warmgray: '#2D2D2D',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Passion One', 'cursive'],
+                        body: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; }
+
+        .gradient-tomate {
+            background: linear-gradient(135deg, #E3342F 0%, #F6993F 50%, #FFED4A 100%);
+        }
+        .gradient-tomate-dark {
+            background: linear-gradient(135deg, #CC1F1A 0%, #E3342F 100%);
+        }
+        .text-gradient-tomate {
+            background: linear-gradient(135deg, #E3342F, #F6993F, #FFED4A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Tomato mascot bounce */
+        .tomato-bounce {
+            animation: bounce 2s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-15px) rotate(-3deg); }
+            75% { transform: translateY(-5px) rotate(3deg); }
+        }
+
+        /* Splash effect */
+        .splash-bg {
+            position: relative;
+            overflow: hidden;
+        }
+        .splash-bg::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(227,52,47,0.1) 0%, transparent 50%);
+            animation: splash-rotate 20s linear infinite;
+        }
+        @keyframes splash-rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(227,52,47,0.2);
+        }
+
+        /* Foam/bubbles decoration */
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            animation: rise 4s ease-in-out infinite;
+        }
+        @keyframes rise {
+            0% { transform: translateY(0) scale(1); opacity: 0.5; }
+            50% { transform: translateY(-30px) scale(1.1); opacity: 0.8; }
+            100% { transform: translateY(0) scale(1); opacity: 0.5; }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+
+        /* Beer glass animation */
+        .beer-tilt {
+            animation: tilt 3s ease-in-out infinite;
+        }
+        @keyframes tilt {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+
+        /* Escarchado rim texture */
+        .escarchado {
+            border: 3px solid #F6993F;
+            box-shadow: 0 0 0 3px rgba(246,153,63,0.3), inset 0 0 0 2px rgba(246,153,63,0.2);
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a1a1a; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #E3342F, #F6993F); border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-tomate-dark text-white">
+
+    <!-- TOP BAR -->
+    <div class="gradient-tomate text-center py-2 text-sm font-bold tracking-wide text-white">
+        Visítanos en FIF 2026 — Feria Internacional de Franquicias — WTC CDMX
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-tomate-dark/95 backdrop-blur-sm border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- Tomato icon -->
+                <div class="w-10 h-10 rounded-full bg-tomate-red flex items-center justify-center text-2xl">
+                    🍅
+                </div>
+                <div>
+                    <h1 class="font-display font-black text-2xl text-white leading-tight tracking-wide">KE-TOMATE</h1>
+                    <p class="text-[10px] text-tomate-orange uppercase tracking-widest font-semibold">La Michelada Perfecta</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-white/70">
+                <a href="#menu" class="hover:text-tomate-orange transition">Menú</a>
+                <a href="#sucursales" class="hover:text-tomate-orange transition">Sucursales</a>
+                <a href="#franquicia" class="hover:text-tomate-orange transition">Franquicia</a>
+                <a href="#contacto" class="gradient-tomate text-white px-5 py-2 rounded-full font-bold hover:opacity-90 transition">Contáctanos</a>
+            </div>
+            <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden p-2 text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-tomate-dark border-t border-white/5 px-4 py-4 space-y-3">
+            <a href="#menu" class="block text-white/70 font-medium">Menú</a>
+            <a href="#sucursales" class="block text-white/70 font-medium">Sucursales</a>
+            <a href="#franquicia" class="block text-white/70 font-medium">Franquicia</a>
+            <a href="#contacto" class="block gradient-tomate text-white text-center py-2 rounded-full font-bold">Contáctanos</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="relative min-h-[90vh] flex items-center overflow-hidden splash-bg">
+        <!-- Bubbles decoration -->
+        <div class="bubble w-4 h-4 top-20 left-[10%]" style="animation-delay: 0s;"></div>
+        <div class="bubble w-6 h-6 top-40 left-[25%]" style="animation-delay: 1s;"></div>
+        <div class="bubble w-3 h-3 top-60 right-[15%]" style="animation-delay: 0.5s;"></div>
+        <div class="bubble w-5 h-5 top-32 right-[30%]" style="animation-delay: 1.5s;"></div>
+        <div class="bubble w-4 h-4 bottom-40 left-[40%]" style="animation-delay: 2s;"></div>
+
+        <!-- Background glow -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-tomate-red/20 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-tomate-orange/15 rounded-full blur-[100px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                        <span class="w-2 h-2 bg-tomate-green rounded-full animate-pulse"></span>
+                        <span class="text-white/80 text-sm font-medium">FIF 2026 — ¡Ya somos franquicia!</span>
+                    </div>
+                    <h2 class="font-display font-black text-6xl md:text-7xl lg:text-8xl leading-none mb-4">
+                        SIMPLEMENTE<br>
+                        <span class="text-gradient-tomate">LA MICHELADA</span><br>
+                        PERFECTA
+                    </h2>
+                    <p class="text-white/60 text-lg md:text-xl mb-8 max-w-lg">
+                        Desde Cuernavaca para todo México. Micheladas, preparados y botanas que conquistan paladares. ¡Ahora puedes ser parte de la familia!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#franquicia" class="gradient-tomate text-white font-bold text-lg px-8 py-4 rounded-full text-center hover:opacity-90 transition shadow-lg shadow-red-500/30">
+                            Quiero mi Franquicia 🍅
+                        </a>
+                        <a href="#menu" class="border-2 border-white/20 text-white font-bold text-lg px-8 py-4 rounded-full text-center hover:bg-white/10 transition">
+                            Ver Menú
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <!-- Animated beer/michelada display -->
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-tomate-red/30 to-tomate-orange/20 flex items-center justify-center beer-tilt">
+                            <div class="text-center">
+                                <span class="text-[120px] md:text-[150px] block">🍺</span>
+                                <span class="text-4xl block -mt-4">🍅</span>
+                            </div>
+                        </div>
+                        <!-- Floating elements -->
+                        <div class="absolute -top-4 -right-4 bg-tomate-yellow text-tomate-dark font-bold text-sm px-4 py-2 rounded-full animate-bounce shadow-lg">
+                            ¡NEW! Franquicia
+                        </div>
+                        <div class="absolute -bottom-2 -left-4 bg-white/10 backdrop-blur-sm text-white font-medium text-sm px-4 py-2 rounded-full">
+                            4 sucursales 📍
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="gradient-tomate py-8">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+            <div>
+                <p class="font-display font-black text-5xl">4</p>
+                <p class="text-white/80 text-sm mt-1">Sucursales</p>
+            </div>
+            <div>
+                <p class="font-display font-black text-5xl">2024</p>
+                <p class="text-white/80 text-sm mt-1">Marca registrada</p>
+            </div>
+            <div>
+                <p class="font-display font-black text-5xl">200+</p>
+                <p class="text-white/80 text-sm mt-1">Colores de michelada</p>
+            </div>
+            <div>
+                <p class="font-display font-black text-5xl">CDMX</p>
+                <p class="text-white/80 text-sm mt-1">Próxima apertura</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="py-24 bg-tomate-warmgray">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-tomate-orange font-bold text-sm uppercase tracking-widest">Nuestro Menú</span>
+                <h2 class="font-display font-black text-5xl md:text-6xl mt-3 mb-4 text-white">
+                    SABORES QUE CONQUISTAN
+                </h2>
+                <p class="text-white/50 text-lg">Micheladas, preparados especiales y botanas irresistibles</p>
+            </div>
+
+            <!-- Micheladas -->
+            <div class="mb-16">
+                <h3 class="font-display text-3xl text-tomate-orange mb-8 text-center">🍺 MICHELADAS & PREPARADOS</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 escarchado">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">Michelada Clásica</h4>
+                            <span class="text-tomate-yellow font-display text-2xl">🍅</span>
+                        </div>
+                        <p class="text-white/50 text-sm">Nuestra receta original con mezcla de tomate, limón, escarchado de chile y tu cerveza favorita.</p>
+                    </div>
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 escarchado">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">COCOMATO</h4>
+                            <span class="text-tomate-yellow font-display text-2xl">🥥</span>
+                        </div>
+                        <p class="text-white/50 text-sm">Coco + cacahuate = felicidad en cada mordida. Nuestra creación estrella que tienes que probar.</p>
+                    </div>
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 escarchado">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">Ke Boost</h4>
+                            <span class="text-tomate-yellow font-display text-2xl">⚡</span>
+                        </div>
+                        <p class="text-white/50 text-sm">Boost con cerveza y que el DJ haga lo suyo. Energía y sabor para las mejores noches.</p>
+                    </div>
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 escarchado">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">La Niña Fresa</h4>
+                            <span class="text-tomate-yellow font-display text-2xl">🍓</span>
+                        </div>
+                        <p class="text-white/50 text-sm">Mezcla de sabores tiernos, delicados y divertidos. Para quienes buscan algo dulce y refrescante.</p>
+                        <p class="text-tomate-orange font-bold text-sm mt-2">~$100 MXN</p>
+                    </div>
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 escarchado">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">Roncito / Cuba Libre</h4>
+                            <span class="text-tomate-yellow font-display text-2xl">🥃</span>
+                        </div>
+                        <p class="text-white/50 text-sm">Para los amantes del ron. Preparado con estilo Ke-Tomate y nuestro toque especial.</p>
+                    </div>
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 escarchado">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">Michelada de Limón</h4>
+                            <span class="text-tomate-yellow font-display text-2xl">🍋</span>
+                        </div>
+                        <p class="text-white/50 text-sm">Fresca, cítrica e intensa. La variante clásica para los puristas del sabor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botanas -->
+            <div>
+                <h3 class="font-display text-3xl text-tomate-orange mb-8 text-center">🌶️ BOTANAS</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center">
+                        <p class="text-3xl mb-3">🥜</p>
+                        <h4 class="font-bold text-white">Cacahuates</h4>
+                        <p class="text-white/40 text-sm mt-1">Con salsas especiales</p>
+                        <p class="text-tomate-yellow font-bold mt-2">$50 MXN</p>
+                    </div>
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center">
+                        <p class="text-3xl mb-3">🦐</p>
+                        <h4 class="font-bold text-white">Camarón</h4>
+                        <p class="text-white/40 text-sm mt-1">Estilo Ke-Tomate</p>
+                        <p class="text-tomate-yellow font-bold mt-2">$50 MXN</p>
+                    </div>
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center">
+                        <p class="text-3xl mb-3">🌶️</p>
+                        <h4 class="font-bold text-white">Cuernitos Calientes</h4>
+                        <p class="text-white/40 text-sm mt-1">Con verduras, limón y salsas</p>
+                        <p class="text-tomate-yellow font-bold mt-2">$70 MXN</p>
+                    </div>
+                    <div class="card-hover bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center">
+                        <p class="text-3xl mb-3">🫘</p>
+                        <h4 class="font-bold text-white">Cacahuate y Salsas</h4>
+                        <p class="text-white/40 text-sm mt-1">Porción grande</p>
+                        <p class="text-tomate-yellow font-bold mt-2">$70 MXN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCURSALES -->
+    <section id="sucursales" class="py-24 bg-tomate-dark">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-tomate-orange font-bold text-sm uppercase tracking-widest">Encuéntranos</span>
+                <h2 class="font-display font-black text-5xl md:text-6xl mt-3 mb-4 text-white">
+                    NUESTRAS SUCURSALES
+                </h2>
+                <p class="text-white/50 text-lg">4 ubicaciones en Cuernavaca — ¡Próximamente en CDMX!</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-hover bg-gradient-to-br from-tomate-red/20 to-tomate-orange/10 rounded-2xl p-6 border border-white/10">
+                    <div class="w-12 h-12 rounded-full bg-tomate-red/20 flex items-center justify-center mb-4 text-2xl">📍</div>
+                    <h3 class="font-bold text-lg text-white mb-1">Granjas</h3>
+                    <p class="text-white/40 text-sm mb-3">Av. 10 de Abril S/N, Las Granjas, CP 62460, Cuernavaca</p>
+                    <p class="text-tomate-orange text-sm font-medium">Sucursal original</p>
+                </div>
+                <div class="card-hover bg-gradient-to-br from-tomate-red/20 to-tomate-orange/10 rounded-2xl p-6 border border-white/10">
+                    <div class="w-12 h-12 rounded-full bg-tomate-red/20 flex items-center justify-center mb-4 text-2xl">📍</div>
+                    <h3 class="font-bold text-lg text-white mb-1">Satélite</h3>
+                    <p class="text-white/40 text-sm mb-3">Av. 10 de Abril #54, Col. Satélite, Cuernavaca</p>
+                    <p class="text-tomate-orange text-sm font-medium">Segunda sucursal</p>
+                </div>
+                <div class="card-hover bg-gradient-to-br from-tomate-red/20 to-tomate-orange/10 rounded-2xl p-6 border border-white/10">
+                    <div class="w-12 h-12 rounded-full bg-tomate-red/20 flex items-center justify-center mb-4 text-2xl">📍</div>
+                    <h3 class="font-bold text-lg text-white mb-1">Gobernadores</h3>
+                    <p class="text-white/40 text-sm mb-3">Cuernavaca, Morelos</p>
+                    <p class="text-tomate-orange text-sm font-medium">Zona sur</p>
+                </div>
+                <div class="card-hover bg-gradient-to-br from-tomate-red/20 to-tomate-orange/10 rounded-2xl p-6 border border-white/10">
+                    <div class="w-12 h-12 rounded-full bg-tomate-red/20 flex items-center justify-center mb-4 text-2xl">📍</div>
+                    <h3 class="font-bold text-lg text-white mb-1">Palmas</h3>
+                    <p class="text-white/40 text-sm mb-3">Cuernavaca, Morelos</p>
+                    <p class="text-tomate-orange text-sm font-medium">Zona norte</p>
+                </div>
+            </div>
+
+            <!-- Coming soon CDMX -->
+            <div class="mt-8 bg-gradient-to-r from-tomate-red/20 via-tomate-orange/20 to-tomate-yellow/20 rounded-2xl p-8 text-center border border-tomate-orange/30">
+                <p class="text-3xl mb-3">🏙️</p>
+                <h3 class="font-display text-3xl text-tomate-yellow mb-2">¡PRÓXIMAMENTE EN CDMX!</h3>
+                <p class="text-white/60">Estamos expandiéndonos. Lleva Ke-Tomate a tu ciudad con nuestra franquicia.</p>
+            </div>
+
+            <!-- Horarios -->
+            <div class="mt-8 bg-white/5 rounded-2xl p-8 text-center">
+                <h3 class="font-display text-2xl text-tomate-orange mb-4">🕐 HORARIOS</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+                    <div class="bg-white/5 rounded-xl p-3">
+                        <p class="font-bold text-white text-sm">Lun - Vie</p>
+                        <p class="text-white/50 text-sm">12:00 PM - 8:00 PM</p>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-3">
+                        <p class="font-bold text-white text-sm">Sábado</p>
+                        <p class="text-white/50 text-sm">9:00 AM - 8:00 PM</p>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-3">
+                        <p class="font-bold text-white text-sm">Domingo</p>
+                        <p class="text-white/50 text-sm">9:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FRANCHISE -->
+    <section id="franquicia" class="py-24 bg-tomate-warmgray relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-tomate-red/10 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-tomate-orange/10 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-tomate-yellow/20 rounded-full px-6 py-2 mb-6">
+                    <span class="text-tomate-yellow font-bold text-sm">¡NUEVO 2026!</span>
+                </div>
+                <h2 class="font-display font-black text-5xl md:text-7xl text-white mb-4">
+                    ¡YA SOMOS<br><span class="text-gradient-tomate">FRANQUICIA!</span>
+                </h2>
+                <p class="text-white/50 text-lg max-w-2xl mx-auto">
+                    Sé dueño de tu propia sucursal Ke-Tomate. Un modelo de negocio probado, con una marca registrada y el mejor producto del mercado.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                    <div class="w-14 h-14 rounded-xl bg-tomate-red/20 flex items-center justify-center mb-4 text-2xl">🍅</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Marca Registrada</h3>
+                    <p class="text-white/40 text-sm">Ke-Tomate es una marca formalmente registrada con todos los derechos protegidos. Inviertes en algo serio.</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                    <div class="w-14 h-14 rounded-xl bg-tomate-orange/20 flex items-center justify-center mb-4 text-2xl">📈</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Modelo Probado</h3>
+                    <p class="text-white/40 text-sm">4 sucursales exitosas en Cuernavaca, clientes fieles y un producto que se vende solo. Receta perfecta.</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                    <div class="w-14 h-14 rounded-xl bg-tomate-yellow/20 flex items-center justify-center mb-4 text-2xl">🎓</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Capacitación Completa</h3>
+                    <p class="text-white/40 text-sm">Te enseñamos todo: preparación, operación, servicio al cliente. No necesitas experiencia previa.</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                    <div class="w-14 h-14 rounded-xl bg-tomate-green/20 flex items-center justify-center mb-4 text-2xl">🏪</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Operación Simple</h3>
+                    <p class="text-white/40 text-sm">Concepto fácil de operar con pocos empleados. Enfocado en micheladas y botanas — sin cocina compleja.</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                    <div class="w-14 h-14 rounded-xl bg-tomate-red/20 flex items-center justify-center mb-4 text-2xl">🎯</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Alto Margen</h3>
+                    <p class="text-white/40 text-sm">Las bebidas preparadas tienen márgenes de ganancia atractivos. Producto con alta demanda todo el año.</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                    <div class="w-14 h-14 rounded-xl bg-tomate-orange/20 flex items-center justify-center mb-4 text-2xl">🚀</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Expansión Nacional</h3>
+                    <p class="text-white/40 text-sm">Estamos creciendo. CDMX es el siguiente destino. Asegura tu territorio antes que alguien más.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#contacto" class="inline-block gradient-tomate text-white font-bold text-xl px-12 py-5 rounded-full hover:opacity-90 transition shadow-xl shadow-red-500/30">
+                    Solicitar Información de Franquicia 🍅
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / LEAD CAPTURE -->
+    <section id="contacto" class="py-24 bg-tomate-dark">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <span class="text-tomate-orange font-bold text-sm uppercase tracking-widest">FIF 2026</span>
+                    <h2 class="font-display font-black text-5xl md:text-6xl text-white mt-3 mb-6">
+                        ¿QUIERES SER PARTE<br>DE <span class="text-gradient-tomate">KE-TOMATE?</span>
+                    </h2>
+                    <p class="text-white/50 text-lg mb-8">
+                        Déjanos tus datos y te contactaremos con toda la información sobre nuestra franquicia. ¡O escríbenos directo por WhatsApp!
+                    </p>
+
+                    <div class="space-y-4">
+                        <a href="https://wa.me/525633295799?text=Hola%2C%20me%20interesa%20la%20franquicia%20de%20Ke-Tomate.%20Los%20conoc%C3%AD%20en%20FIF%202026." target="_blank" class="flex items-center gap-4 bg-[#25D366]/10 rounded-xl p-4 hover:bg-[#25D366]/20 transition group">
+                            <div class="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-white group-hover:text-[#25D366] transition">WhatsApp</p>
+                                <p class="text-white/40 text-sm">56 3329 5799</p>
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-white">Instagram</p>
+                                <p class="text-white/40 text-sm">@ke_tomate</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+                            <div class="w-12 h-12 rounded-full bg-tomate-red/20 flex items-center justify-center flex-shrink-0 text-xl">
+                                📧
+                            </div>
+                            <div>
+                                <p class="font-bold text-white">Email</p>
+                                <p class="text-white/40 text-sm">ke.tomates22@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <form id="leadForm" class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                        <h3 class="font-display text-2xl text-white mb-6">SOLICITA INFORMACIÓN</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-white/60 mb-1">Nombre completo *</label>
+                                <input type="text" id="fname" required class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10 text-white placeholder-white/30 focus:border-tomate-orange focus:ring-2 focus:ring-tomate-orange/20 outline-none transition" placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-white/60 mb-1">Teléfono / WhatsApp *</label>
+                                <input type="tel" id="fphone" required class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10 text-white placeholder-white/30 focus:border-tomate-orange focus:ring-2 focus:ring-tomate-orange/20 outline-none transition" placeholder="55 1234 5678">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-white/60 mb-1">Email</label>
+                                <input type="email" id="femail" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10 text-white placeholder-white/30 focus:border-tomate-orange focus:ring-2 focus:ring-tomate-orange/20 outline-none transition" placeholder="tu@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-white/60 mb-1">Ciudad donde te gustaría abrir</label>
+                                <input type="text" id="fcity" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10 text-white placeholder-white/30 focus:border-tomate-orange focus:ring-2 focus:ring-tomate-orange/20 outline-none transition" placeholder="Ej: CDMX, Guadalajara, Querétaro...">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-white/60 mb-1">¿Qué te interesa?</label>
+                                <select id="finterest" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/10 text-white focus:border-tomate-orange focus:ring-2 focus:ring-tomate-orange/20 outline-none transition">
+                                    <option value="" class="bg-tomate-dark">Selecciona una opción</option>
+                                    <option value="franquicia" class="bg-tomate-dark">Abrir mi franquicia Ke-Tomate</option>
+                                    <option value="inversionista" class="bg-tomate-dark">Invertir en el negocio</option>
+                                    <option value="proveedor" class="bg-tomate-dark">Ser proveedor</option>
+                                    <option value="otro" class="bg-tomate-dark">Otro</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full gradient-tomate text-white font-bold text-lg py-4 rounded-xl hover:opacity-90 transition shadow-lg shadow-red-500/20">
+                                Enviar información 🍅
+                            </button>
+                            <p class="text-xs text-white/30 text-center">Al enviar aceptas ser contactado por el equipo de Ke-Tomate</p>
+                        </div>
+                    </form>
+                    <div id="formSuccess" class="hidden bg-tomate-green/10 border border-tomate-green/30 rounded-2xl p-8 text-center">
+                        <div class="text-5xl mb-4">🍅</div>
+                        <h3 class="font-display text-2xl text-white mb-2">¡GRACIAS!</h3>
+                        <p class="text-white/60">Te contactaremos muy pronto con toda la información.</p>
+                        <a href="https://wa.me/525633295799?text=Hola%2C%20me%20interesa%20la%20franquicia%20de%20Ke-Tomate.%20Los%20conoc%C3%AD%20en%20FIF%202026." target="_blank" class="inline-block mt-4 bg-[#25D366] text-white font-bold px-6 py-3 rounded-full">
+                            O escríbenos por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <span class="text-3xl">🍅</span>
+                    <div>
+                        <p class="font-display font-black text-2xl text-white">KE-TOMATE</p>
+                        <p class="text-white/30 text-xs">Simplemente la Michelada Perfecta</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.instagram.com/ke_tomate/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 transition">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/KeTomateCuerna" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                </div>
+                <p class="text-white/20 text-sm">Cuernavaca, Morelos — Desde 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/525633295799?text=Hola%2C%20me%20interesa%20Ke-Tomate.%20Los%20conoc%C3%AD%20en%20FIF%202026." target="_blank" class="whatsapp-float">
+        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- ELEVENLABS CHATBOT PLACEHOLDER -->
+    <!-- <elevenlabs-convai agent-id="YOUR_AGENT_ID"></elevenlabs-convai> -->
+    <!-- <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script> -->
+
+    <script>
+        // Form → WhatsApp redirect
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('fname').value;
+            const phone = document.getElementById('fphone').value;
+            const email = document.getElementById('femail').value;
+            const city = document.getElementById('fcity').value;
+            const interest = document.getElementById('finterest').value;
+
+            document.getElementById('leadForm').classList.add('hidden');
+            document.getElementById('formSuccess').classList.remove('hidden');
+
+            const msg = `Hola, soy ${name}. Los conocí en FIF 2026 y me interesa ${interest || 'información sobre Ke-Tomate'}. Mi teléfono es ${phone}${city ? ', me interesa abrir en ' + city : ''}${email ? '. Mi email: ' + email : ''}.`;
+            const waUrl = `https://wa.me/525633295799?text=${encodeURIComponent(msg)}`;
+
+            setTimeout(() => { window.open(waUrl, '_blank'); }, 1500);
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('mobileMenu')?.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
