@@ -57,7 +57,7 @@ export default function Sucursales() {
           className="text-center mb-8"
         >
           <span className="text-[#E53935] text-sm font-bold uppercase tracking-[0.3em]">
-            Visitanos
+            Visítanos
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mt-4">
             Nuestras{" "}
@@ -72,7 +72,7 @@ export default function Sucursales() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="text-gray-400 text-lg text-center max-w-2xl mx-auto mb-12"
         >
-          En Ke Tomate cada sucursal tiene su propio estilo: algunas estan disenadas para que pidas y lleves tu cerveza, y otras para que te quedes a disfrutar.
+          En Ke Tomate cada sucursal tiene su propio estilo: algunas están diseñadas para que pidas y lleves tu cerveza, y otras para que te quedes a disfrutar.
         </motion.p>
 
         {/* Tab selector */}

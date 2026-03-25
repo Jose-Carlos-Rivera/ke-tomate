@@ -19,7 +19,7 @@ export default function About() {
           className="mb-4"
         >
           <span className="text-[#E53935] text-sm font-bold uppercase tracking-[0.3em]">
-            Conocenos
+            Conócenos
           </span>
         </motion.div>
 
@@ -29,7 +29,7 @@ export default function About() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-12"
         >
-          Que es{" "}
+          ¿Qué es{" "}
           <span className="text-[#FFC107]">Ke-Tomate</span>?
         </motion.h2>
 
@@ -42,18 +42,18 @@ export default function About() {
           >
             <p className="text-gray-300 text-lg leading-relaxed">
               <span className="text-[#E53935] font-semibold">Ke Tomate</span> es una marca que redefine la forma de disfrutar una michelada.
-              Un concepto que fusiona sabor, diseno y actitud, con micheladas cuidadosamente creadas para quienes saben elegir.
+              Un concepto que fusiona sabor, diseño y actitud, con micheladas cuidadosamente creadas para quienes saben elegir.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Cada detalle esta pensado para elevar el momento: desde la seleccion de ingredientes hasta la presentacion y el ambiente que envuelve cada sucursal. Aqui, la michelada deja de ser una bebida para convertirse en un{" "}
-              <span className="text-[#FFC107] font-semibold">simbolo de estilo y disfrute</span>.
+              Cada detalle está pensado para elevar el momento: desde la selección de ingredientes hasta la presentación y el ambiente que envuelve cada sucursal. Aquí, la michelada deja de ser una bebida para convertirse en un{" "}
+              <span className="text-[#FFC107] font-semibold">símbolo de estilo y disfrute</span>.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed font-semibold italic">
               Ke Tomate no solo se vive, se distingue.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
               Simplemente, <span className="text-[#E53935] font-semibold">la michelada perfecta</span>.{" "}
-              Variedad de mas de 19 marcas de cerveza.
+              Variedad de más de 19 marcas de cerveza.
             </p>
           </motion.div>
 

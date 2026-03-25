@@ -52,7 +52,7 @@ export default function Eventos() {
             </h2>
             <p className="text-gray-300 text-lg mb-6 leading-relaxed">
               Llevamos la barra de micheladas a tu evento. Bodas, fiestas,
-              corporativos, cumpleanos — montamos todo con nuestros ingredientes
+              corporativos, cumpleaños — montamos todo con nuestros ingredientes
               frescos, salsas artesanales y la actitud Ke-Tomate.
             </p>
 
@@ -60,7 +60,7 @@ export default function Eventos() {
               {[
                 { icon: "🍹", text: "Barra completa de micheladas y escarchados" },
                 { icon: "🌶️", text: "Salsas, frutas, dulces y toppings premium" },
-                { icon: "👥", text: "Servicio para eventos de cualquier tamano" },
+                { icon: "👥", text: "Servicio para eventos de cualquier tamaño" },
                 { icon: "📍", text: "Cobertura en Cuernavaca y alrededores" },
               ].map((item, i) => (
                 <motion.div

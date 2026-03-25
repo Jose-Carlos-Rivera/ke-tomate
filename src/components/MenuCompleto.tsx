@@ -18,7 +18,7 @@ const micheladas = [
   { name: "Ke Antojo", desc: "Todos los toppings que quieras", emoji: "🤤", color: "#9C27B0", image: "/images/menu/ke-antojo.jpeg" },
   { name: "Ke Tomate", desc: "Refrescante clamato preparado", emoji: "🍹", color: "#4CAF50", badge: "La Original" },
   { name: "Ke Solapa", desc: "Para los que les gusta algo mas natural", emoji: "🌿", color: "#8BC34A" },
-  { name: "Ke Boost", desc: "Energia con sabor a cerveza", emoji: "⚡", color: "#00E5FF" },
+  { name: "Ke Boost", desc: "Energía con sabor a cerveza", emoji: "⚡", color: "#00E5FF" },
 ];
 
 const tragos = [
@@ -26,13 +26,13 @@ const tragos = [
   { name: "Frappe Bailey's", desc: "Con mazapan", emoji: "🍫", color: "#8D6E63" },
   { name: "Whisky", desc: "", emoji: "🥂", color: "#FFC107" },
   { name: "Gin Gin", desc: "Ginebra y frutos rojos, pepino, romero", emoji: "🫐", color: "#7C4DFF" },
-  { name: "La Nina Fresa", desc: "Mezcla de sabores tiernos, delicados y divertidos", emoji: "🍓", color: "#FF4081" },
+  { name: "La Niña Fresa", desc: "Mezcla de sabores tiernos, delicados y divertidos", emoji: "🍓", color: "#FF4081" },
   { name: "Roncito", desc: "Cuba libre", emoji: "🍸", color: "#FF5722" },
   { name: "10 de Abril", desc: "Ron, cerveza y mineral", emoji: "🍻", color: "#2196F3" },
   { name: "Palomita", desc: "Tequila y Squirt, escarchado con sal", emoji: "🍋", color: "#CDDC39" },
   { name: "Malibu Premium", desc: "El favorito de la casa", emoji: "🏖️", color: "#00BCD4", badge: "Favorito", image: "/images/menu/malibu-premium.jpeg" },
-  { name: "Blue Cherry", desc: "Exotico sabor hidratante", emoji: "🍒", color: "#3F51B5" },
-  { name: "Pina Colada", desc: "Coctel tropical con coco y pina", emoji: "🍍", color: "#FFC107", image: "/images/menu/pina-colada.jpeg" },
+  { name: "Blue Cherry", desc: "Exótico sabor hidratante", emoji: "🍒", color: "#3F51B5" },
+  { name: "Piña Colada", desc: "Cóctel tropical con coco y piña", emoji: "🍍", color: "#FFC107", image: "/images/menu/pina-colada.jpeg" },
   { name: "Tintinto", desc: "Trago de la casa", emoji: "🍷", color: "#9C27B0", image: "/images/menu/tintinto.jpeg" },
 ];
 
@@ -116,7 +116,7 @@ export default function MenuCompleto() {
           className="text-center mb-12"
         >
           <span className="text-[#E53935] text-sm font-bold uppercase tracking-[0.3em]">
-            Nuestro Menu
+            Nuestro Menú
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mt-4">
             Micheladas, <span className="text-[#FFC107]">Tragos</span> y{" "}

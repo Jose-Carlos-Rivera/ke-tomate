@@ -25,7 +25,7 @@ export default function Franquicias() {
             <span className="text-[#E53935]">Franquicia</span>
           </h2>
           <p className="text-gray-400 text-lg mt-4 max-w-xl mx-auto">
-            Se parte de la familia Ke-Tomate y lleva la michelada perfecta a tu ciudad
+            Sé parte de la familia Ke-Tomate y lleva la michelada perfecta a tu ciudad
           </p>
         </motion.div>
 
@@ -40,22 +40,22 @@ export default function Franquicias() {
               {
                 icon: "🏪",
                 title: "Modelo Probado",
-                desc: "4 sucursales exitosas en Cuernavaca con un concepto unico y replicable.",
+                desc: "4 sucursales exitosas en Cuernavaca con un concepto único y replicable.",
               },
               {
                 icon: "🍹",
                 title: "Recetas Exclusivas",
-                desc: "Salsas artesanales y un menu que enamora a todos.",
+                desc: "Salsas artesanales y un menú que enamora a todos.",
               },
               {
                 icon: "📈",
                 title: "Alta Rentabilidad",
-                desc: "Inversion accesible con retorno rapido gracias a nuestro modelo operativo eficiente.",
+                desc: "Inversión accesible con retorno rápido gracias a nuestro modelo operativo eficiente.",
               },
               {
                 icon: "🤝",
                 title: "Soporte Total",
-                desc: "Capacitacion completa, manual de operaciones y acompanamiento continuo.",
+                desc: "Capacitación completa, manual de operaciones y acompañamiento continuo.",
               },
             ].map((item, i) => (
               <motion.div
@@ -87,7 +87,7 @@ export default function Franquicias() {
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              Solicitar Informacion
+              Solicitar Información
             </a>
             <p className="text-gray-500 text-sm mt-4">
               Se abrira tu correo con ke.tomates22@gmail.com

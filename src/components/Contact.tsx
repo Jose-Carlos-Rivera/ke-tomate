@@ -57,11 +57,11 @@ export default function Contact() {
             Contacto
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mt-4">
-            Siguenos y{" "}
-            <span className="text-[#FFC107]">Contactanos</span>
+            Síguenos y{" "}
+            <span className="text-[#FFC107]">Contáctanos</span>
           </h2>
           <p className="text-gray-400 text-lg mt-4 max-w-xl mx-auto">
-            Encuentranos en redes sociales o escribenos directamente
+            Encuéntranos en redes sociales o escríbenos directamente
           </p>
         </motion.div>
 
