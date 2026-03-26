@@ -45,34 +45,59 @@ export default function MicheladaAnimation() {
             opacity: handOpacity,
             filter: "brightness(0.75)",
           }}
-          className="absolute z-[5]"
+          className="absolute z-[5] hidden md:block"
         >
           <Image
             src="/images/animation/hand.webp"
             alt="Mano agarrando michelada"
             width={800}
             height={800}
-            className="w-[250px] md:w-[400px] h-auto object-contain"
+            className="w-[400px] h-auto object-contain"
             priority
             unoptimized
           />
         </motion.div>
 
+        {/* Desktop: michelada animada absolute */}
         <motion.div
           style={{
             x: micheladaXPercent,
             rotate: micheladaRotate,
             opacity: micheladaOpacity,
           }}
-          className="absolute z-10"
+          className="absolute z-10 hidden md:block"
         >
           <Image
             src="/images/animation/beer.webp"
             alt="Micheladas Ke-Tomate"
             width={400}
             height={500}
-            className="w-[220px] md:w-[400px] h-auto object-contain"
+            className="w-[400px] h-auto object-contain"
             priority
+          />
+        </motion.div>
+
+        {/* Mobile: michelada + mano vertical layout */}
+        <motion.div
+          style={{ opacity: micheladaOpacity }}
+          className="absolute z-10 md:hidden flex flex-col items-center top-[30%]"
+        >
+          <Image
+            src="/images/animation/beer.webp"
+            alt="Micheladas Ke-Tomate"
+            width={400}
+            height={500}
+            className="w-[200px] h-auto object-contain"
+            priority
+          />
+          <Image
+            src="/images/animation/hand.webp"
+            alt="Mano agarrando michelada"
+            width={800}
+            height={800}
+            className="w-[180px] h-auto object-contain -mt-4 opacity-75"
+            priority
+            unoptimized
           />
         </motion.div>
       </div>
