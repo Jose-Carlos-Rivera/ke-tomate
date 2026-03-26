@@ -5,9 +5,8 @@ import { useRef, useState } from "react";
 const sucursales = [
   {
     name: "Granjas",
-    subtitle: "Sucursal Original",
     address: "Av. 10 de Abril s/n, Esq. Calle Vicente Guerrero, Col. Las Granjas, Cuernavaca, Mor.",
-    hours: { weekday: "Dom - Jue: 12:00 - 8:00 PM", weekend: "Vie - Sab: 12:00 PM - 12:00 AM" },
+    hours: { weekday: "Dom - Jue: 12:00 - 9:00 PM", weekend: "Vie - Sab: 12:00 PM - 12:00 AM" },
     phone: "56 3329 5799",
     mapUrl: "https://maps.app.goo.gl/PMSBbcFnpMCRCSUJ9",
     color: "#E53935",
