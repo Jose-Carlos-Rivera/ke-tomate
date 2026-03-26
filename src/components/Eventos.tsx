@@ -20,13 +20,12 @@ export default function Eventos() {
             transition={{ duration: 0.7, type: "spring" }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden border border-[#2a2a2a]">
+            <div className="relative rounded-3xl overflow-hidden border border-[#2a2a2a] aspect-[4/3]">
               <Image
                 src="/images/eventos/eventos.webp"
                 alt="Barra de micheladas para eventos Ke-Tomate"
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover object-center scale-[1.25]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4">
