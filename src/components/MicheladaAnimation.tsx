@@ -67,7 +67,7 @@ export default function MicheladaAnimation() {
           className="absolute z-10"
         >
           <Image
-            src="/images/animation/beer.webp"
+            src="/images/animation/michelada.webp"
             alt="Micheladas Ke-Tomate"
             width={400}
             height={500}
