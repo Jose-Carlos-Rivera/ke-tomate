@@ -2,7 +2,15 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default function Franquicias() {
+interface FranquiciasProps {
+  content: {
+    subtitle: string;
+    benefits: { icon: string; title: string; desc: string }[];
+    email: string;
+  };
+}
+
+export default function Franquicias({ content }: FranquiciasProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -25,7 +33,7 @@ export default function Franquicias() {
             <span className="text-[#E53935]">Franquicia</span>
           </h2>
           <p className="text-gray-400 text-lg mt-4 max-w-xl mx-auto">
-            Sé parte de la familia Ke-Tomate y lleva la michelada perfecta a tu ciudad
+            {content.subtitle}
           </p>
         </motion.div>
 
@@ -36,28 +44,7 @@ export default function Franquicias() {
           className="bg-gradient-to-br from-[#1a1a1a] to-[#111] border border-[#2a2a2a] rounded-3xl p-8 md:p-12"
         >
           <div className="grid md:grid-cols-2 gap-8 mb-10">
-            {[
-              {
-                icon: "🏪",
-                title: "Modelo Probado",
-                desc: "4 sucursales exitosas en Cuernavaca con un concepto único y replicable.",
-              },
-              {
-                icon: "🍹",
-                title: "Recetas Exclusivas",
-                desc: "Salsas artesanales y un menú que enamora a todos.",
-              },
-              {
-                icon: "📈",
-                title: "Alta Rentabilidad",
-                desc: "Inversión accesible con retorno rápido gracias a nuestro modelo operativo eficiente.",
-              },
-              {
-                icon: "🤝",
-                title: "Soporte Total",
-                desc: "Capacitación completa, manual de operaciones y acompañamiento continuo.",
-              },
-            ].map((item, i) => (
+            {content.benefits.map((item, i) => (
               <motion.div
                 key={item.title}
                 initial={{ y: 20, opacity: 0 }}
@@ -81,7 +68,7 @@ export default function Franquicias() {
             className="text-center"
           >
             <a
-              href="mailto:ke.tomates22@gmail.com?subject=Informes%20Franquicia%20Ke-Tomate"
+              href={`mailto:${content.email}?subject=Informes%20Franquicia%20Ke-Tomate`}
               className="inline-flex items-center gap-3 px-10 py-5 bg-[#E53935] hover:bg-[#C62828] text-white font-bold text-lg rounded-full transition-all hover:scale-105 shadow-[0_0_30px_rgba(229,57,53,0.4)]"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,7 +77,7 @@ export default function Franquicias() {
               Solicitar Información
             </a>
             <p className="text-gray-500 text-sm mt-4">
-              Se abrira tu correo con ke.tomates22@gmail.com
+              Se abrira tu correo con {content.email}
             </p>
           </motion.div>
         </motion.div>

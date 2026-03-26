@@ -2,16 +2,17 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function Hero() {
+interface HeroProps {
+  content: { tagline: string; subtitle: string };
+}
+
+export default function Hero({ content }: HeroProps) {
   return (
     <section
       id="inicio"
       className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
     >
-      {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#1a0505] to-[#0a0a0a]" />
-
-      {/* Decorative red glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#E53935]/10 rounded-full blur-[60px] md:blur-[120px]" />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
@@ -37,7 +38,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-[#FFC107] text-xl md:text-2xl lg:text-3xl font-bold italic mb-8"
         >
-          Simplemente la Michelada Perfecta
+          {content.tagline}
         </motion.p>
 
         <motion.p
@@ -46,7 +47,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.6 }}
           className="text-gray-300 text-lg md:text-2xl max-w-2xl mx-auto mb-12"
         >
-          Micheladas, tragos y botanas en Cuernavaca, Morelos
+          {content.subtitle}
         </motion.p>
 
         <motion.div

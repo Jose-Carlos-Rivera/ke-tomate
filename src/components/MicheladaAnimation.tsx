@@ -3,7 +3,15 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-export default function MicheladaAnimation() {
+interface AnimationProps {
+  content: {
+    title: string;
+    titleHighlight: string;
+    subtitle: string;
+  };
+}
+
+export default function MicheladaAnimation({ content }: AnimationProps) {
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -31,11 +39,11 @@ export default function MicheladaAnimation() {
           className="absolute z-20 text-center px-4 top-[10%]"
         >
           <h3 className="text-3xl md:text-5xl font-black text-white mb-4">
-            La michelada que{" "}
-            <span className="text-[#E53935]">todos quieren</span>
+            {content.title}{" "}
+            <span className="text-[#E53935]">{content.titleHighlight}</span>
           </h3>
           <p className="text-[#FFC107] text-xl md:text-2xl font-semibold">
-            Simplemente la Michelada Perfecta
+            {content.subtitle}
           </p>
         </motion.div>
 

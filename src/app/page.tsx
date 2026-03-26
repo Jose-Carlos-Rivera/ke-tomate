@@ -9,19 +9,24 @@ import Franquicias from "@/components/Franquicias";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingButton from "@/components/FloatingButton";
+import { getContent } from "@/lib/content";
 
-export default function Home() {
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  const content = await getContent();
+
   return (
     <main className="min-h-screen bg-[#0a0a0a]">
       <Navbar />
-      <Hero />
-      <About />
-      <MicheladaAnimation />
-      <MenuCompleto />
-      <Eventos />
-      <Sucursales />
-      <Franquicias />
-      <Contact />
+      <Hero content={content.hero} />
+      <About content={content.about} />
+      <MicheladaAnimation content={content.animation} />
+      <MenuCompleto content={content.menu} />
+      <Eventos content={content.eventos} />
+      <Sucursales content={content.sucursales} />
+      <Franquicias content={content.franquicias} />
+      <Contact content={content.contact} />
       <Footer />
       <FloatingButton />
     </main>

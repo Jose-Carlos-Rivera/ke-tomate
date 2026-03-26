@@ -1,48 +1,21 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
+import type { SucursalLocation } from "@/lib/content";
 
-const sucursales = [
-  {
-    name: "Granjas",
-    address: "Av. 10 de Abril s/n, Esq. Calle Vicente Guerrero, Col. Las Granjas, Cuernavaca, Mor.",
-    hours: { weekday: "Dom - Jue: 12:00 - 9:00 PM", weekend: "Vie - Sab: 12:00 PM - 12:00 AM" },
-    phone: "56 3329 5799",
-    mapUrl: "https://maps.app.goo.gl/PMSBbcFnpMCRCSUJ9",
-    color: "#E53935",
-    tipo: "Consumo en establecimiento",
-  },
-  {
-    name: "Satelite",
-    address: "Av. 10 de Abril, Esq. Orquidea, Col. Satelite, Cuernavaca, Mor.",
-    hours: { weekday: "Lun - Vie: 12:00 - 8:00 PM", weekend: "Sab - Dom: 9:00 AM - 8:00 PM" },
-    mapUrl: "https://www.google.com/maps/search/Ke+Tomate+Av+10+de+Abril+Satelite+Cuernavaca",
-    color: "#FFC107",
-    tipo: "Para llevar",
-  },
-  {
-    name: "Gobernadores",
-    address: "Av Vicente Guerrero 106-b, Lomas de Cortes, 62230 Cuernavaca, Mor.",
-    hours: { weekday: "Lun - Vie: 12:00 - 8:00 PM", weekend: "Sab - Dom: 9:00 AM - 8:00 PM" },
-    mapUrl: "https://maps.app.goo.gl/Ur2YCjBArwacnEJu6",
-    color: "#FF6F00",
-    tipo: "Para llevar",
-  },
-  {
-    name: "Palmas",
-    subtitle: "Plaza Anatani",
-    address: "Av. Morelos 147, Col. Las Palmas, CP 62380, Cuernavaca, Morelos",
-    hours: { weekday: "Lun - Vie: 12:00 - 8:00 PM", weekend: "Sab - Dom: 9:00 AM - 8:00 PM" },
-    mapUrl: "https://maps.app.goo.gl/Z5ehv8Ty8XUZwdoW9",
-    color: "#4CAF50",
-    tipo: "Consumo en establecimiento",
-  },
-];
+interface SucursalesProps {
+  content: {
+    description: string;
+    locations: SucursalLocation[];
+  };
+}
 
-export default function Sucursales() {
+export default function Sucursales({ content }: SucursalesProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [active, setActive] = useState(0);
+
+  const sucursales = content.locations;
 
   return (
     <section id="sucursales" className="py-24 px-4 relative" ref={ref}>
@@ -64,14 +37,13 @@ export default function Sucursales() {
           </h2>
         </motion.div>
 
-        {/* Leyenda */}
         <motion.p
           initial={{ y: 20, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.15 }}
           className="text-gray-400 text-lg text-center max-w-2xl mx-auto mb-12"
         >
-          En Ke Tomate cada sucursal tiene su propio estilo: algunas están diseñadas para que pidas y lleves tu cerveza, y otras para que te quedes a disfrutar.
+          {content.description}
         </motion.p>
 
         {/* Tab selector */}
@@ -129,7 +101,7 @@ export default function Sucursales() {
             </div>
           </div>
 
-          {/* Tipo badge - post-it style */}
+          {/* Tipo badge */}
           <div className="mb-6">
             <span
               className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold ${
@@ -138,18 +110,18 @@ export default function Sucursales() {
                   : "bg-[#FFC107]/15 text-[#FFC107] border border-[#FFC107]/30"
               }`}
             >
-              {sucursales[active].tipo === "Consumo en establecimiento" ? "🪑" : "🛍️"}{" "}
+              {sucursales[active].tipo === "Consumo en establecimiento" ? "\u{1FA91}" : "\u{1F6CD}\uFE0F"}{" "}
               {sucursales[active].tipo}
             </span>
           </div>
 
           <div className="space-y-4 mb-8">
             <div className="flex items-start gap-3">
-              <span className="text-lg">📍</span>
+              <span className="text-lg">{"\u{1F4CD}"}</span>
               <p className="text-gray-300">{sucursales[active].address}</p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-lg">🕐</span>
+              <span className="text-lg">{"\u{1F550}"}</span>
               <div>
                 <p className="text-gray-300">{sucursales[active].hours.weekday}</p>
                 <p className="text-gray-300">{sucursales[active].hours.weekend}</p>
@@ -157,7 +129,7 @@ export default function Sucursales() {
             </div>
             {sucursales[active].phone && (
               <div className="flex items-start gap-3">
-                <span className="text-lg">📞</span>
+                <span className="text-lg">{"\u{1F4DE}"}</span>
                 <a
                   href={`tel:${sucursales[active].phone}`}
                   className="text-[#FFC107] hover:text-[#E53935] transition-colors"
@@ -191,7 +163,6 @@ export default function Sucursales() {
             Abrir en Google Maps
           </a>
         </motion.div>
-
       </div>
     </section>
   );

@@ -1,0 +1,139 @@
+{
+  "hero": {
+    "tagline": "Simplemente la Michelada Perfecta",
+    "subtitle": "Micheladas, tragos y botanas en Cuernavaca, Morelos"
+  },
+  "about": {
+    "paragraphs": [
+      "Ke Tomate es una marca que redefine la forma de disfrutar una michelada. Un concepto que fusiona sabor, diseño y actitud, con micheladas cuidadosamente creadas para quienes saben elegir.",
+      "Cada detalle está pensado para elevar el momento: desde la selección de ingredientes hasta la presentación y el ambiente que envuelve cada sucursal. Aquí, la michelada deja de ser una bebida para convertirse en un símbolo de estilo y disfrute.",
+      "Ke Tomate no solo se vive, se distingue.",
+      "Simplemente, la michelada perfecta. Variedad de más de 19 marcas de cerveza."
+    ],
+    "stats": [
+      { "number": "4", "label": "Sucursales", "color": "#E53935" },
+      { "number": "3K+", "label": "Seguidores", "color": "#FF6F00" },
+      { "number": "2024", "label": "Franquicia", "color": "#FFC107" }
+    ]
+  },
+  "animation": {
+    "title": "La michelada que",
+    "titleHighlight": "todos quieren",
+    "subtitle": "Simplemente la Michelada Perfecta"
+  },
+  "menu": {
+    "micheladaSteps": [
+      "Elige tu michelada",
+      "La pulpa y escarchado",
+      "Tu cerveza (incluyen 2 latones)"
+    ],
+    "micheladas": [
+      { "name": "Ke Camaron", "desc": "Camaron, pepino, clamato, limon, salsas", "emoji": "🦐", "color": "#E53935", "image": "/images/menu/ke-camaron.jpeg" },
+      { "name": "Ke Cubana", "desc": "Salsas, limon, sal", "emoji": "🍺", "color": "#FFC107" },
+      { "name": "Ke Tomata", "desc": "Clamato, salsas, limon, sal", "emoji": "🍅", "color": "#FF6F00" },
+      { "name": "Ke Goma", "desc": "Gomitas, pulpa de la casa", "emoji": "🍬", "color": "#E91E63", "image": "/images/menu/ke-goma.jpeg" },
+      { "name": "Ke Antojo", "desc": "Todos los toppings que quieras", "emoji": "🤤", "color": "#9C27B0", "image": "/images/menu/ke-antojo.jpeg" },
+      { "name": "Ke Tomate", "desc": "Refrescante clamato preparado", "emoji": "🍹", "color": "#4CAF50", "badge": "La Original" },
+      { "name": "Ke Solapa", "desc": "Para los que les gusta algo mas natural", "emoji": "🌿", "color": "#8BC34A" },
+      { "name": "Ke Boost", "desc": "Energía con sabor a cerveza", "emoji": "⚡", "color": "#00E5FF" }
+    ],
+    "tragos": [
+      { "name": "Mezcalito", "desc": "Tamarindo, maracuya y jamaica", "emoji": "🥃", "color": "#FF6F00", "image": "/images/menu/mezcalito.jpeg" },
+      { "name": "Frappe Bailey's", "desc": "Con mazapán", "emoji": "🍫", "color": "#8D6E63", "image": "/images/menu/pina-colada.jpeg" },
+      { "name": "Whisky", "desc": "", "emoji": "🥂", "color": "#FFC107" },
+      { "name": "Gin Gin", "desc": "Ginebra y frutos rojos, pepino, romero", "emoji": "🫐", "color": "#7C4DFF" },
+      { "name": "La Niña Fresa", "desc": "Mezcla de sabores tiernos, delicados y divertidos", "emoji": "🍓", "color": "#FF4081" },
+      { "name": "Roncito", "desc": "Cuba libre", "emoji": "🍸", "color": "#FF5722" },
+      { "name": "10 de Abril", "desc": "Ron, cerveza y mineral", "emoji": "🍻", "color": "#2196F3" },
+      { "name": "Palomita", "desc": "Tequila y Squirt, escarchado con sal", "emoji": "🍋", "color": "#CDDC39" },
+      { "name": "Malibu Premium", "desc": "El favorito de la casa", "emoji": "🏖️", "color": "#00BCD4", "badge": "Favorito", "image": "/images/menu/malibu-premium.jpeg" },
+      { "name": "Blue Cherry", "desc": "Exótico sabor hidratante", "emoji": "🍒", "color": "#3F51B5" },
+      { "name": "Piña Colada", "desc": "Cóctel tropical con coco y piña", "emoji": "🍍", "color": "#FFC107" },
+      { "name": "Tintinto", "desc": "Trago de la casa", "emoji": "🍷", "color": "#9C27B0", "image": "/images/menu/tintinto.jpeg" }
+    ],
+    "botanas": [
+      { "name": "Aceitunas", "desc": "", "emoji": "🫒", "color": "#4CAF50" },
+      { "name": "Coconato", "desc": "Coco, cacahuate, japones, chamoy, esquite, pulpa de la casa y limon", "emoji": "🥥", "color": "#FFC107", "badge": "Estrella", "image": "/images/menu/cocomato.jpeg" },
+      { "name": "Papas Zarandeadas", "desc": "Papa natural y/o horneada, chicharron, a elegir pollo, camaron y salsas", "emoji": "🥔", "color": "#FF6F00" },
+      { "name": "Cochipapas", "desc": "Cacahuate, mix de verduras, cueritos, mix de gomita dulce, rielitos, limon y salsas", "emoji": "🍟", "color": "#E53935", "image": "/images/menu/cochipapas.jpeg" },
+      { "name": "Tostilichi", "desc": "Botana crujiente con todos los toppings", "emoji": "🌮", "color": "#FF5722", "image": "/images/menu/tostilichi.jpeg" }
+    ],
+    "pulpas": ["Variedad de pulpas", "La favorita: la de la casa"],
+    "escarchados": ["Tajin", "Pecositas", "Miguelito", "Ajonjolí Garapiñado", "Mora Azul", "Fresa"],
+    "cervezas": ["Tecate", "Tecate Light", "XX Lager", "Heineken", "Heineken Cero", "Bohemia Cristal", "Corona Cero", "Negra Modelo", "Pacifico", "Carta Blanca", "Miller", "Amstel", "Ultra", "Indio", "Corona", "Victoria", "Modelo Especial", "Negra Modelo Cero"],
+    "introCards": [
+      { "image": "/images/menu/trago-antojable.jpeg", "alt": "Trago antojable" },
+      { "image": "/images/menu/trago-antojable-2.jpeg", "alt": "Trago antojable" },
+      { "image": "/images/menu/trago-antojable-3.jpeg", "alt": "Trago antojable" },
+      { "image": "/images/menu/trago-antojable-4.jpeg", "alt": "Trago antojable" }
+    ]
+  },
+  "eventos": {
+    "description": "Llevamos la experiencia de Ke Tomate hasta tu evento. Nuestras micheladas, preparadas al momento con ingredientes premium y el sabor que nos distingue, convierten cualquier reunión en algo memorable. Ideal para eventos sociales y corporativos que buscan un toque original, fresco y lleno de estilo.",
+    "features": [
+      { "icon": "🍹", "text": "Barra completa de micheladas y escarchados" },
+      { "icon": "🌶️", "text": "Salsas, frutas, dulces y toppings premium" },
+      { "icon": "👥", "text": "Servicio para eventos de cualquier tamaño" },
+      { "icon": "📍", "text": "Cobertura en Cuernavaca y alrededores" }
+    ],
+    "ctaText": "Cotiza tu Evento",
+    "ctaUrl": "https://www.instagram.com/ke_tomate/",
+    "imageSrc": "/images/eventos/eventos.webp"
+  },
+  "sucursales": {
+    "description": "En Ke Tomate cada sucursal tiene su propio estilo: algunas están diseñadas para que pidas y lleves tu cerveza, y otras para que te quedes a disfrutar.",
+    "locations": [
+      {
+        "name": "Granjas",
+        "address": "Av. 10 de Abril s/n, Esq. Calle Vicente Guerrero, Col. Las Granjas, Cuernavaca, Mor.",
+        "hours": { "weekday": "Dom - Jue: 12:00 - 9:00 PM", "weekend": "Vie - Sab: 12:00 PM - 12:00 AM" },
+        "phone": "56 3329 5799",
+        "mapUrl": "https://maps.app.goo.gl/PMSBbcFnpMCRCSUJ9",
+        "color": "#E53935",
+        "tipo": "Consumo en establecimiento"
+      },
+      {
+        "name": "Satelite",
+        "address": "Av. 10 de Abril, Esq. Orquidea, Col. Satelite, Cuernavaca, Mor.",
+        "hours": { "weekday": "Lun - Vie: 12:00 - 8:00 PM", "weekend": "Sab - Dom: 9:00 AM - 8:00 PM" },
+        "mapUrl": "https://www.google.com/maps/search/Ke+Tomate+Av+10+de+Abril+Satelite+Cuernavaca",
+        "color": "#FFC107",
+        "tipo": "Para llevar"
+      },
+      {
+        "name": "Gobernadores",
+        "address": "Av Vicente Guerrero 106-b, Lomas de Cortes, 62230 Cuernavaca, Mor.",
+        "hours": { "weekday": "Lun - Vie: 12:00 - 8:00 PM", "weekend": "Sab - Dom: 9:00 AM - 8:00 PM" },
+        "mapUrl": "https://maps.app.goo.gl/Ur2YCjBArwacnEJu6",
+        "color": "#FF6F00",
+        "tipo": "Para llevar"
+      },
+      {
+        "name": "Palmas",
+        "subtitle": "Plaza Anatani",
+        "address": "Av. Morelos 147, Col. Las Palmas, CP 62380, Cuernavaca, Morelos",
+        "hours": { "weekday": "Lun - Vie: 12:00 - 8:00 PM", "weekend": "Sab - Dom: 9:00 AM - 8:00 PM" },
+        "mapUrl": "https://maps.app.goo.gl/Z5ehv8Ty8XUZwdoW9",
+        "color": "#4CAF50",
+        "tipo": "Consumo en establecimiento"
+      }
+    ]
+  },
+  "franquicias": {
+    "subtitle": "Sé parte de la familia Ke-Tomate y lleva la michelada perfecta a tu ciudad",
+    "benefits": [
+      { "icon": "🏪", "title": "Modelo Probado", "desc": "4 sucursales exitosas en Cuernavaca con un concepto único y replicable." },
+      { "icon": "🍹", "title": "Recetas Exclusivas", "desc": "Salsas artesanales y un menú que enamora a todos." },
+      { "icon": "📈", "title": "Alta Rentabilidad", "desc": "Inversión accesible con retorno rápido gracias a nuestro modelo operativo eficiente." },
+      { "icon": "🤝", "title": "Soporte Total", "desc": "Capacitación completa, manual de operaciones y acompañamiento continuo." }
+    ],
+    "email": "ke.tomates22@gmail.com"
+  },
+  "contact": {
+    "links": [
+      { "name": "Instagram", "handle": "@ke_tomate", "url": "https://www.instagram.com/ke_tomate/" },
+      { "name": "Facebook", "handle": "Ke-Tomate", "url": "https://www.facebook.com/KeTomateCuerna" },
+      { "name": "Email", "handle": "ke.tomates22@gmail.com", "url": "mailto:ke.tomates22@gmail.com" }
+    ]
+  }
+}
