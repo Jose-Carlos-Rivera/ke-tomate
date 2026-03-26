@@ -13,7 +13,7 @@ const introCards = [
 const micheladas = [
   { name: "Ke Camaron", desc: "Camaron, pepino, clamato, limon, salsas", emoji: "🦐", color: "#E53935", image: "/images/menu/ke-camaron.jpeg" },
   { name: "Ke Cubana", desc: "Salsas, limon, sal", emoji: "🍺", color: "#FFC107" },
-  { name: "Ke Tonata", desc: "Clamato, salsas, limon, sal", emoji: "🍅", color: "#FF6F00" },
+  { name: "Ke Tomata", desc: "Clamato, salsas, limon, sal", emoji: "🍅", color: "#FF6F00" },
   { name: "Ke Goma", desc: "Gomitas, pulpa de la casa", emoji: "🍬", color: "#E91E63", image: "/images/menu/ke-goma.jpeg" },
   { name: "Ke Antojo", desc: "Todos los toppings que quieras", emoji: "🤤", color: "#9C27B0", image: "/images/menu/ke-antojo.jpeg" },
   { name: "Ke Tomate", desc: "Refrescante clamato preparado", emoji: "🍹", color: "#4CAF50", badge: "La Original" },
@@ -23,7 +23,7 @@ const micheladas = [
 
 const tragos = [
   { name: "Mezcalito", desc: "Tamarindo, maracuya y jamaica", emoji: "🥃", color: "#FF6F00", image: "/images/menu/mezcalito.jpeg" },
-  { name: "Frappe Bailey's", desc: "Con mazapan", emoji: "🍫", color: "#8D6E63" },
+  { name: "Frappe Bailey's", desc: "Con mazapán", emoji: "🍫", color: "#8D6E63", image: "/images/menu/pina-colada.jpeg" },
   { name: "Whisky", desc: "", emoji: "🥂", color: "#FFC107" },
   { name: "Gin Gin", desc: "Ginebra y frutos rojos, pepino, romero", emoji: "🫐", color: "#7C4DFF" },
   { name: "La Niña Fresa", desc: "Mezcla de sabores tiernos, delicados y divertidos", emoji: "🍓", color: "#FF4081" },
@@ -32,7 +32,7 @@ const tragos = [
   { name: "Palomita", desc: "Tequila y Squirt, escarchado con sal", emoji: "🍋", color: "#CDDC39" },
   { name: "Malibu Premium", desc: "El favorito de la casa", emoji: "🏖️", color: "#00BCD4", badge: "Favorito", image: "/images/menu/malibu-premium.jpeg" },
   { name: "Blue Cherry", desc: "Exótico sabor hidratante", emoji: "🍒", color: "#3F51B5" },
-  { name: "Piña Colada", desc: "Cóctel tropical con coco y piña", emoji: "🍍", color: "#FFC107", image: "/images/menu/pina-colada.jpeg" },
+  { name: "Piña Colada", desc: "Cóctel tropical con coco y piña", emoji: "🍍", color: "#FFC107" },
   { name: "Tintinto", desc: "Trago de la casa", emoji: "🍷", color: "#9C27B0", image: "/images/menu/tintinto.jpeg" },
 ];
 
@@ -44,8 +44,8 @@ const botanas = [
   { name: "Tostilichi", desc: "Botana crujiente con todos los toppings", emoji: "🌮", color: "#FF5722", image: "/images/menu/tostilichi.jpeg" },
 ];
 
-const pulpas = ["Skwinkles", "Tamarindo Habanero", "Sandia", "Algodon de Azucar", "Mora Azul", "Picafressa"];
-const escarchados = ["Tajin", "Pecositas", "Miguelito", "Ajonjoli", "Garapinado", "Miguelito Mora Azul"];
+const pulpas = ["Variedad de pulpas", "La favorita: la de la casa"];
+const escarchados = ["Tajin", "Pecositas", "Miguelito", "Ajonjolí Garapiñado", "Mora Azul", "Fresa"];
 const cervezas = [
   "Tecate", "Tecate Light", "XX Lager", "Heineken", "Heineken Cero", "Bohemia Cristal",
   "Corona Cero", "Negra Modelo", "Pacifico", "Carta Blanca", "Miller", "Amstel",
@@ -106,7 +106,7 @@ export default function MenuCompleto() {
 
   return (
     <section id="menu" className="py-24 px-4 relative" ref={ref}>
-      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-[#E53935]/5 rounded-full blur-[100px]" />
+      <div className="hidden md:block absolute top-0 left-0 w-[300px] h-[300px] bg-[#E53935]/5 rounded-full blur-[100px]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div

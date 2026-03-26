@@ -9,7 +9,7 @@ const sucursales = [
     address: "Av. 10 de Abril s/n, Esq. Calle Vicente Guerrero, Col. Las Granjas, Cuernavaca, Mor.",
     hours: { weekday: "Dom - Jue: 12:00 - 8:00 PM", weekend: "Vie - Sab: 12:00 PM - 12:00 AM" },
     phone: "56 3329 5799",
-    mapUrl: "https://www.google.com/maps/search/Ke+Tomate+Granjas+Cuernavaca",
+    mapUrl: "https://www.google.com/maps/search/Ke+Tomate+Av+10+de+Abril+Las+Granjas+Cuernavaca",
     color: "#E53935",
     tipo: "Consumo en establecimiento",
   },
@@ -17,7 +17,7 @@ const sucursales = [
     name: "Satelite",
     address: "Av. 10 de Abril, Esq. Orquidea, Col. Satelite, Cuernavaca, Mor.",
     hours: { weekday: "Lun - Vie: 12:00 - 8:00 PM", weekend: "Sab - Dom: 9:00 AM - 8:00 PM" },
-    mapUrl: "https://www.google.com/maps/search/Ke+Tomate+Satelite+Cuernavaca",
+    mapUrl: "https://www.google.com/maps/search/Ke+Tomate+Av+10+de+Abril+Satelite+Cuernavaca",
     color: "#FFC107",
     tipo: "Para llevar",
   },
@@ -25,7 +25,7 @@ const sucursales = [
     name: "Gobernadores",
     address: "Av Vicente Guerrero 106-b, Lomas de Cortes, 62230 Cuernavaca, Mor.",
     hours: { weekday: "Lun - Vie: 12:00 - 8:00 PM", weekend: "Sab - Dom: 9:00 AM - 8:00 PM" },
-    mapUrl: "https://www.google.com/maps/search/Av+Vicente+Guerrero+106+Lomas+de+Cortes+Cuernavaca",
+    mapUrl: "https://www.google.com/maps/search/Av+Vicente+Guerrero+106-b+Lomas+de+Cortes+62230+Cuernavaca",
     color: "#FF6F00",
     tipo: "Para llevar",
   },
@@ -34,7 +34,7 @@ const sucursales = [
     subtitle: "Plaza Anatani",
     address: "Av. Morelos 147, Col. Las Palmas, CP 62380, Cuernavaca, Morelos",
     hours: { weekday: "Lun - Vie: 12:00 - 8:00 PM", weekend: "Sab - Dom: 9:00 AM - 8:00 PM" },
-    mapUrl: "https://www.google.com/maps/search/Plaza+Anatani+Av+Morelos+147+Las+Palmas+Cuernavaca",
+    mapUrl: "https://www.google.com/maps/search/Ke+Tomate+Av+Morelos+147+Las+Palmas+62380+Cuernavaca",
     color: "#4CAF50",
     tipo: "Consumo en establecimiento",
   },
@@ -47,7 +47,7 @@ export default function Sucursales() {
 
   return (
     <section id="sucursales" className="py-24 px-4 relative" ref={ref}>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#E53935]/5 rounded-full blur-[120px]" />
+      <div className="hidden md:block absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#E53935]/5 rounded-full blur-[120px]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div

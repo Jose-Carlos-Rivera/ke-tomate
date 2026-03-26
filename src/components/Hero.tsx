@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#1a0505] to-[#0a0a0a]" />
 
       {/* Decorative red glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#E53935]/10 rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#E53935]/10 rounded-full blur-[60px] md:blur-[120px]" />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <motion.div

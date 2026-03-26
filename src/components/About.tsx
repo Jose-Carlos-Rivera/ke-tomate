@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section id="nosotros" className="py-24 px-4 relative" ref={ref}>
       {/* Background accent */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#FFC107]/5 rounded-full blur-[100px]" />
+      <div className="hidden md:block absolute top-0 right-0 w-[400px] h-[400px] bg-[#FFC107]/5 rounded-full blur-[100px]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div

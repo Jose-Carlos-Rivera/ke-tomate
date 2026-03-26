@@ -9,7 +9,7 @@ export default function Eventos() {
 
   return (
     <section id="eventos" className="py-24 px-4 relative" ref={ref}>
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#FF6F00]/5 rounded-full blur-[120px]" />
+      <div className="hidden md:block absolute top-0 right-0 w-[400px] h-[400px] bg-[#FF6F00]/5 rounded-full blur-[120px]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -51,9 +51,7 @@ export default function Eventos() {
               <span className="text-[#FFC107]">Ke-Tomate</span>
             </h2>
             <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-              Llevamos la barra de micheladas a tu evento. Bodas, fiestas,
-              corporativos, cumpleaños — montamos todo con nuestros ingredientes
-              frescos, salsas artesanales y la actitud Ke-Tomate.
+              Llevamos la experiencia de Ke Tomate hasta tu evento. Nuestras micheladas, preparadas al momento con ingredientes premium y el sabor que nos distingue, convierten cualquier reunión en algo memorable. Ideal para eventos sociales y corporativos que buscan un toque original, fresco y lleno de estilo.
             </p>
 
             <div className="space-y-4 mb-8">

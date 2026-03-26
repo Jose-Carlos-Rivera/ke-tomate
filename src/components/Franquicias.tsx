@@ -8,7 +8,7 @@ export default function Franquicias() {
 
   return (
     <section id="franquicias" className="py-24 px-4 relative" ref={ref}>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#FFC107]/5 rounded-full blur-[120px]" />
+      <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#FFC107]/5 rounded-full blur-[120px]" />
 
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div
