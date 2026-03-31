@@ -29,10 +29,10 @@
     ],
     "micheladas": [
       { "name": "Ke Camaron", "desc": "Camaron, pepino, clamato, limon, salsas", "emoji": "🦐", "color": "#E53935", "image": "/images/menu/ke-camaron.jpeg" },
-      { "name": "Ke Cubana", "desc": "Salsas, limon, sal", "emoji": "🍺", "color": "#FFC107" },
+      { "name": "Ke Cubana", "desc": "Salsas, limon, sal", "emoji": "🍺", "color": "#FFC107", "image": "/images/menu/ke-cubana.webp" },
       { "name": "Ke Tomata", "desc": "Clamato, salsas, limon, sal", "emoji": "🍅", "color": "#FF6F00", "image": "/images/menu/ke-tomata.webp" },
       { "name": "Ke Goma", "desc": "Gomitas, pulpa de la casa", "emoji": "🍬", "color": "#E91E63", "image": "/images/menu/ke-goma.jpeg" },
-      { "name": "Ke Antojo", "desc": "Todos los toppings que quieras", "emoji": "🤤", "color": "#9C27B0", "image": "/images/menu/ke-antojo.jpeg" },
+      { "name": "Ke Antojo", "desc": "Todos los toppings que quieras", "emoji": "🤤", "color": "#9C27B0", "image": "/images/menu/ke-antojo-v2.webp" },
       { "name": "Ke Tomate", "desc": "Refrescante clamato preparado", "emoji": "🍹", "color": "#4CAF50", "badge": "La Original", "image": "/images/menu/ke-tomate.webp" },
       { "name": "Ke Solapa", "desc": "Para los que les gusta algo mas natural", "emoji": "🌿", "color": "#8BC34A", "image": "/images/menu/ke-solapa.webp" },
       { "name": "Ke Boost", "desc": "Energía con sabor a cerveza", "emoji": "⚡", "color": "#00E5FF", "image": "/images/menu/ke-boost.webp" }
@@ -40,21 +40,21 @@
     "tragos": [
       { "name": "Mezcalito", "desc": "Tamarindo, maracuya y jamaica", "emoji": "🥃", "color": "#FF6F00", "image": "/images/menu/mezcalito-new.webp" },
       { "name": "Frappe Bailey's", "desc": "Con mazapán", "emoji": "🍫", "color": "#8D6E63", "image": "/images/menu/pina-colada.jpeg" },
-      { "name": "Whisky", "desc": "", "emoji": "🥂", "color": "#FFC107", "image": "/images/menu/whisky.webp" },
-      { "name": "Gin Gin", "desc": "Ginebra y frutos rojos, pepino, romero", "emoji": "🫐", "color": "#7C4DFF", "image": "/images/menu/gin-gin.webp" },
+      { "name": "Whisky", "desc": "", "emoji": "🥂", "color": "#FFC107", "image": "/images/menu/whisky-v2.webp" },
+      { "name": "Gin Gin", "desc": "Ginebra y frutos rojos, pepino, romero", "emoji": "🫐", "color": "#7C4DFF", "image": "/images/menu/gin-gin-v2.webp" },
       { "name": "La Niña Fresa", "desc": "Mezcla de sabores tiernos, delicados y divertidos", "emoji": "🍓", "color": "#FF4081", "image": "/images/menu/nina-fresa.webp" },
-      { "name": "Roncito", "desc": "Cuba libre", "emoji": "🍸", "color": "#FF5722", "image": "/images/menu/roncito.webp" },
-      { "name": "10 de Abril", "desc": "Ron, cerveza y mineral", "emoji": "🍻", "color": "#2196F3", "image": "/images/menu/10-de-abril.webp" },
+      { "name": "Roncito", "desc": "Cuba libre", "emoji": "🍸", "color": "#FF5722", "image": "/images/menu/roncito-v2.webp" },
+      { "name": "10 de Abril", "desc": "Ron, cerveza y mineral", "emoji": "🍻", "color": "#2196F3", "image": "/images/menu/10-de-abril-v2.webp" },
       { "name": "Palomita", "desc": "Tequila y Squirt, escarchado con sal", "emoji": "🍋", "color": "#CDDC39", "image": "/images/menu/palomita.webp" },
       { "name": "Malibu Premium", "desc": "El favorito de la casa", "emoji": "🏖️", "color": "#00BCD4", "badge": "Favorito", "image": "/images/menu/malibu-premium.jpeg" },
-      { "name": "Blue Cherry", "desc": "Exótico sabor hidratante", "emoji": "🍒", "color": "#3F51B5", "image": "/images/menu/blue-cherry.webp" },
-      { "name": "Piña Colada", "desc": "Cóctel tropical con coco y piña", "emoji": "🍍", "color": "#FFC107" },
+      { "name": "Blue Cherry", "desc": "Exótico sabor hidratante", "emoji": "🍒", "color": "#3F51B5", "image": "/images/menu/blue-cherry-v2.webp" },
+      { "name": "Piña Colada", "desc": "Cóctel tropical con coco y piña", "emoji": "🍍", "color": "#FFC107", "image": "/images/menu/pina-colada-v2.webp" },
       { "name": "Tintinto", "desc": "Trago de la casa", "emoji": "🍷", "color": "#9C27B0", "image": "/images/menu/tintinto.jpeg" }
     ],
     "botanas": [
-      { "name": "Aceitunas", "desc": "", "emoji": "🫒", "color": "#4CAF50" },
+      { "name": "Aceitunas", "desc": "", "emoji": "🫒", "color": "#4CAF50", "image": "/images/menu/aceitunas.webp" },
       { "name": "Coconato", "desc": "Coco, cacahuate, japones, chamoy, esquite, pulpa de la casa y limon", "emoji": "🥥", "color": "#FFC107", "badge": "Estrella", "image": "/images/menu/cocomato.jpeg" },
-      { "name": "Papas Zarandeadas", "desc": "Papa natural y/o horneada, chicharron, a elegir pollo, camaron y salsas", "emoji": "🥔", "color": "#FF6F00" },
+      { "name": "Papas Zarandeadas", "desc": "Papa natural y/o horneada, chicharron, a elegir pollo, camaron y salsas", "emoji": "🥔", "color": "#FF6F00", "image": "/images/menu/zarandeadas.webp" },
       { "name": "Cochipapas", "desc": "Cacahuate, mix de verduras, cueritos, mix de gomita dulce, rielitos, limon y salsas", "emoji": "🍟", "color": "#E53935", "image": "/images/menu/cochipapas.jpeg" },
       { "name": "Tostilichi", "desc": "Botana crujiente con todos los toppings", "emoji": "🌮", "color": "#FF5722", "image": "/images/menu/tostilichi.jpeg" }
     ],
@@ -88,7 +88,7 @@
         "address": "Av. 10 de Abril s/n, Esq. Calle Vicente Guerrero, Col. Las Granjas, Cuernavaca, Mor.",
         "hours": { "weekday": "Dom - Jue: 12:00 - 9:00 PM", "weekend": "Vie - Sab: 12:00 PM - 12:00 AM" },
         "phone": "56 3329 5799",
-        "mapUrl": "https://maps.app.goo.gl/PMSBbcFnpMCRCSUJ9",
+        "mapUrl": "https://maps.app.goo.gl/PShWPpVyJkb7QiCy6",
         "color": "#E53935",
         "tipo": "Consumo en establecimiento"
       },
@@ -96,7 +96,7 @@
         "name": "Satelite",
         "address": "Av. 10 de Abril, Esq. Orquidea, Col. Satelite, Cuernavaca, Mor.",
         "hours": { "weekday": "Lun - Vie: 12:00 - 8:00 PM", "weekend": "Sab - Dom: 9:00 AM - 8:00 PM" },
-        "mapUrl": "https://www.google.com/maps/search/Ke+Tomate+Av+10+de+Abril+Satelite+Cuernavaca",
+        "mapUrl": "https://maps.app.goo.gl/o6YGNaTcLFZXAQyN7",
         "color": "#FFC107",
         "tipo": "Para llevar"
       },
@@ -104,7 +104,7 @@
         "name": "Gobernadores",
         "address": "Av Vicente Guerrero 106-b, Lomas de Cortes, 62230 Cuernavaca, Mor.",
         "hours": { "weekday": "Lun - Vie: 12:00 - 8:00 PM", "weekend": "Sab - Dom: 9:00 AM - 8:00 PM" },
-        "mapUrl": "https://maps.app.goo.gl/Ur2YCjBArwacnEJu6",
+        "mapUrl": "https://maps.app.goo.gl/vnXBNZz4BAFaDVnD9",
         "color": "#FF6F00",
         "tipo": "Para llevar"
       },
@@ -113,7 +113,7 @@
         "subtitle": "Plaza Anatani",
         "address": "Av. Morelos 147, Col. Las Palmas, CP 62380, Cuernavaca, Morelos",
         "hours": { "weekday": "Lun - Vie: 12:00 - 8:00 PM", "weekend": "Sab - Dom: 9:00 AM - 8:00 PM" },
-        "mapUrl": "https://maps.app.goo.gl/Z5ehv8Ty8XUZwdoW9",
+        "mapUrl": "https://maps.app.goo.gl/khk9wfmZeHy32hC39",
         "color": "#4CAF50",
         "tipo": "Consumo en establecimiento"
       }
