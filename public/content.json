@@ -29,8 +29,8 @@
     ]
   },
   "animation": {
-    "title": "La michelada que",
-    "titleHighlight": "todos quieren",
+    "title": "Más que una michelada",
+    "titleHighlight": "una experiencia",
     "subtitle": "Simplemente la Michelada Perfecta"
   },
   "menu": {
@@ -101,7 +101,7 @@
     "tragos": [
       {
         "name": "Mezcalito",
-        "desc": "Tamarindo, maracuya y jamaica",
+        "desc": "Tamarindo, maracuya , jamaica y guayaba.",
         "emoji": "🥃",
         "color": "#FF6F00",
         "image": "/images/menu/mezcalito-new.webp"
@@ -122,7 +122,7 @@
       },
       {
         "name": "Gin Gin",
-        "desc": "Ginebra y frutos rojos, pepino, romero",
+        "desc": "Ginebra y frutos rojos.",
         "emoji": "🫐",
         "color": "#7C4DFF",
         "image": "/images/menu/gin-gin-v2.webp"
@@ -150,7 +150,7 @@
       },
       {
         "name": "Palomita",
-        "desc": "Tequila y Squirt, escarchado con sal",
+        "desc": "Tequila y soda de toronja.",
         "emoji": "🍋",
         "color": "#CDDC39",
         "image": "/images/menu/palomita.webp"
@@ -194,12 +194,12 @@
         "image": "/images/menu/aceitunas.webp"
       },
       {
-        "name": "Coconato",
-        "desc": "Coco, cacahuate, japones, chamoy, esquite, pulpa de la casa y limon",
+        "name": "Cocomato",
+        "desc": "Coco natural, cacahuate y pulpa de la casa.",
         "emoji": "🥥",
         "color": "#FFC107",
         "badge": "Estrella",
-        "image": "/images/menu/cocomato.jpeg"
+        "image": ""
       },
       {
         "name": "Papas Zarandeadas",
@@ -248,7 +248,6 @@
       "Carta Blanca",
       "Miller",
       "Amstel",
-      "Ultra",
       "Indio",
       "Corona",
       "Victoria",
