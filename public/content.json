@@ -345,6 +345,17 @@
         "mapUrl": "https://maps.app.goo.gl/khk9wfmZeHy32hC39",
         "color": "#4CAF50",
         "tipo": "Consumo en establecimiento"
+      },
+      {
+        "name": "Paraíso ",
+        "address": "Calle Emiliano Zapata, 5 de Mayo L1, Miguel Hidalgo, 62585 Temixco, Mor.",
+        "hours": {
+          "weekday": "Lun - Jue: 12:00 a 8:00pm  Vie: 12:00 a 9:00pm",
+          "weekend": "Sab: 9:00 am a 9:00pm   Dom: 9:00 am a 8:00pm"
+        },
+        "mapUrl": "Calle Emiliano Zapata, 5 de Mayo L1, Miguel Hidalgo, 62585 Temixco, Mor.",
+        "color": "#E53935",
+        "tipo": "Para llevar"
       }
     ]
   },
