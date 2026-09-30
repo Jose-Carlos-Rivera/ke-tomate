@@ -279,19 +279,19 @@
     "features": [
       {
         "icon": "🍹",
-        "text": "Barra completa de micheladas y escarchados"
+        "text": "Barra completa de bebidas y escarchados"
       },
       {
         "icon": "🌶️",
-        "text": "Salsas, frutas, dulces y toppings premium"
+        "text": "Ingredientes y toppings premium"
       },
       {
         "icon": "👥",
-        "text": "Servicio para eventos de cualquier tamaño"
+        "text": "Una experiencia Ke Tomate diseñada para tu evento"
       },
       {
         "icon": "📍",
-        "text": "Cobertura en Cuernavaca y alrededores"
+        "text": "Llevamos la experincia Ke Tomate hasta tu evento"
       }
     ],
     "ctaText": "Cotiza tu Evento",
@@ -350,12 +350,12 @@
     ]
   },
   "franquicias": {
-    "subtitle": "Sé parte de la familia Ke-Tomate y lleva la michelada perfecta a tu ciudad",
+    "subtitle": "Invierte en un concepto consolidado y lleva la experiencia Ke Tomate a tu ciudad.",
     "benefits": [
       {
         "icon": "🏪",
-        "title": "Modelo Probado",
-        "desc": "4 sucursales exitosas en Cuernavaca con un concepto único y replicable."
+        "title": "Modelo de negocio probado",
+        "desc": "Un concepto estadarizado, replicable y respaldado por la experiencia operativa Ke Tomate.\n"
       },
       {
         "icon": "🍹",
@@ -365,12 +365,17 @@
       {
         "icon": "📈",
         "title": "Alta Rentabilidad",
-        "desc": "Inversión accesible con retorno rápido gracias a nuestro modelo operativo eficiente."
+        "desc": "MODELO DE INVERSIÓN ATRACTIVO\nUna propuesta de inversión respaldada por un modelo operativo estandarizado y diseñado para facilitar su gestión."
       },
       {
         "icon": "🤝",
-        "title": "Soporte Total",
-        "desc": "Capacitación completa, manual de operaciones y acompañamiento continuo."
+        "title": "Acompañamiento Integral",
+        "desc": "Capacitación, manuales operativos y acompañamiento continuo para la correcta implementaciòn del modelo Ke Tomate."
+      },
+      {
+        "icon": "✨",
+        "title": "Estrategias de expansiòn territorial",
+        "desc": "Desarrollo de nuevas unidades bajo criterios de cobertura y protecciòn territorial definidos por la marca."
       }
     ],
     "email": "ke.tomates22@gmail.com"
